@@ -1,0 +1,3 @@
+[submodule "public/css/pakyow-css"]
+	path = public/css/pakyow-css
+	url = git@github.com:metabahn/pakyow-css.git

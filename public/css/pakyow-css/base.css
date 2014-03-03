@@ -1,0 +1,66 @@
+body {
+  background:#f1f1f1;
+
+  color:#333;
+  font:12px "Helvetica Neue", Helvetica, sans-serif;
+}
+
+code {
+  font:11px Menlo, monospace;
+}
+
+h1 {
+  font:bold 42px/2em;
+  text-shadow:#fff 1px 1px 0px;
+}
+
+h2 {
+  font:bold 28px/2em;
+  text-shadow:#fff 1px 1px 0px;
+}
+
+h3 {
+  font:bold 14px/2em;
+  text-transform:uppercase;
+  text-shadow:#fff 1px 1px 0px;
+}
+
+h4 {
+  font:bold 14px/2em;
+  text-shadow:#fff 1px 1px 0px;
+}
+
+hr {
+  border:0;
+  height:1px;
+  background:#DEDEDE;
+  margin-top:30px;
+}
+
+a {
+  color:#206cb1;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+  color:#185286;
+}
+
+input, textarea, select {
+  outline:none;
+}
+
+/*****************************
+    Utility Classes
+*****************************/
+
+.secondary {
+  font-size:11px;
+  color:#777;
+}
+
+.underline {
+  border-bottom:1px solid #ccc;
+  padding-bottom:5px;
+}

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Inspired by:
+# http://wynnnetherland.com/linked/2013012801/bootstrapping-consistency
+# http://robots.thoughtbot.com/post/41439635905/bin-setup
+
+# Set up Ruby dependencies
+bundle install --binstubs
+
+# Set up database
+bundle exec rake db:setup
+
+# Set up configurable environment variables for Foreman
+if [ ! -f .env ]; then
+  echo "RACK_ENV=development" > .env
+fi
+
+echo "port: 7000" > .foreman
+
+# Set up DNS through Pow
+if [ -d ~/.pow ]
+then
+  echo 3000 > ~/.pow/`basename $PWD`
+else
+  echo "Pow not set up but the team uses it for this project. Setup: http://goo.gl/RaDPO"
+fi

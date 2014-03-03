@@ -1,0 +1,2 @@
+    console:
+    gem install pakyow

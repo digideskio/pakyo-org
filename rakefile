@@ -1,0 +1,30 @@
+env = ARGV[1] || 'development'
+env = env.split('=')[1] || env
+
+require File.join(File.dirname(__FILE__), 'app')
+PakyowApplication::Application.stage(env.to_sym)
+
+namespace :db do
+  desc "create, migrate, and seed the database"
+  task :setup do
+    %w(
+      create
+      migrate
+      seed
+    ).each {|t|
+      Rake::Task["db:#{t}"].invoke
+    }
+  end
+
+  desc "create the database"
+  task :create do
+  end
+
+  desc "migrate the database"
+  task :migrate do
+  end
+
+  desc "seed the database"
+  task :seed do
+  end
+end
