@@ -22,6 +22,12 @@ Pakyow::App.define do
     app.ignore_routes = true
   end
 
+  configure(:production) do
+    app.auto_reload = false
+    app.static = false
+    app.errors_in_browser = false
+  end
+
   processor :md do |content|
     Formatter.format(content)
   end
