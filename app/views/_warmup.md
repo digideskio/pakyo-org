@@ -20,6 +20,8 @@ If you get stuck at any point reference the warmup app on [GitHub](https://githu
 you're still stuck, by all means ask for help on the [mailing list](http://groups.google.com/group/pakyow), 
 or on [Twitter](http://twitter.com/pakyow)!
 
+Btw, you can find the app running at [pakyow-warmup.herokuapp.com](http://pakyow-warmup.herokuapp.com).
+
 # Project Generation
 
 Pakyow ships with command-line tools that help you generate and manage
