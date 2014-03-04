@@ -79,7 +79,7 @@ Notice the `@include`? That's including a partial into the page. Composed togeth
       (content from a_partial)
     </body>
 
-Read more about view building [here](http://pakyow.com/view_construction).
+Read more about view building [here](http://pakyow.com/docs/view_composition).
 
 ## Better View Transformation
 
@@ -123,13 +123,13 @@ Resulting view:
 
 As you can see, back-end code is now expressed in terms of *data* rather than a *view-specific language*. This makes it possible to perform complete front-end refactors without changing any back-end code, so long as the same underlying data is represented.
 
-Read more about view transformation and data binding [here](http://pakyow.com/view_binding).
+Read more about view transformation and data binding [here](http://pakyow.com/docs/data_binding).
 
 ## What's Next?
 
 0.8 is the most stable release we've put out. There shouldn't be any major changes to the public API between 0.8 and 1.0. So, we hope to be on a more frequent release cycle from this point forward. At the same time, we plan to put out more content to help you use Pakyow to build your web apps.
 
-We are planning for one more major release before hitting 1.0. A full roadmap will be published in the coming weeks, but our efforts will be focused in two main areas (such tease):
+We are planning for one more major release before hitting 1.0. A full roadmap will be published in the coming weeks, but our efforts will be focused in two main areas:
 
 - A new pakyow-ui library for building auto-updating views
 - Better integration with other Ruby web frameworks
