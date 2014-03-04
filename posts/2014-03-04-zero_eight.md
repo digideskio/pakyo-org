@@ -1,5 +1,5 @@
 ---
-title: Pakyow 0.8: New Router, Updated View Syntax, and Better View Transformation
+title: "Pakyow 0.8: New Router, Updated View Syntax, and Smarter View Transformation"
 time: 7:45am CST
 ---
 
@@ -81,7 +81,7 @@ Notice the `@include`? That's including a partial into the page. Composed togeth
 
 Read more about view building [here](http://pakyow.com/docs/view_composition).
 
-## Better View Transformation
+## Smarter View Transformation
 
 One of the fundamental concepts in Pakyow has been that the front-end and back-end of an application are developed in isolation. This leads to logic-less views and isolates the back-end code. The problem is that we didn't fully accomplish this in previous releases.
 

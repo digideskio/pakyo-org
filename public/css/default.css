@@ -376,11 +376,17 @@ code {
     float: right;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 13px; }
+    font-size: 13px;
+    margin-top: -50px; }
   .blog .post {
     margin-bottom: 120px; }
-    .blog .post h2 {
-      margin-bottom: 0; }
+    .blog .post h1 {
+      margin-bottom: 0;
+      text-transform: none;
+      font-size: 25px; }
+      .blog .post h1 a {
+        text-decoration: none;
+        color: #222; }
     .blog .post .date {
       color: #777;
       font-size: 11px; }

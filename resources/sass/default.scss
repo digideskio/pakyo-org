@@ -479,13 +479,21 @@ code {
     text-transform:uppercase;
     font-weight:bold;
     font-size:13px;
+    margin-top:-50px;
   }
 
   .post {
     margin-bottom:120px;
 
-    h2 {
+    h1 {
       margin-bottom:0;
+      text-transform: none;
+      font-size:25px;
+
+      a {
+        text-decoration:none;
+        color:#222;
+      }
     }
 
     .date {
