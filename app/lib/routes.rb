@@ -1,4 +1,33 @@
 Pakyow::App.routes do
+  handler 404 do
+    presenter.path = 'errors/404'
+  end
+
+  handler 500 do
+    unless Pakyow.app.env == :development
+      subject = 'pakyow-web fail'
+
+      body = []
+      body << request.path
+      body << ""
+      body << request.error.message
+      body << ""
+      body.concat(request.error.backtrace)
+
+      mail = Mail.new do
+        from    'fail@pakyow.com'
+        to      ENV['FAIL_MAIL']
+        subject subject
+        body    body.join("\n")
+      end
+      
+      mail.delivery_method :sendmail
+      mail.deliver
+    end
+
+    presenter.path = 'errors/500'
+  end
+
   get 'blog' do
     posts = BlogPost.all
     partial(:post).scope(:post).bind(posts[0])

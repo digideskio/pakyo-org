@@ -16,6 +16,7 @@ Pakyow::App.define do
   configure(:development) do
     require 'pp'
     $stdout.sync = true
+    app.errors_in_browser = false
   end
 
   configure(:prototype) do
