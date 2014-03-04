@@ -1,5 +1,5 @@
 ---
-title: 0.8 Release
+title: Pakyow 0.8: New Router, Updated View Syntax, and Better View Transformation
 time: 7:45am CST
 ---
 
