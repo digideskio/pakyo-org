@@ -1,6 +1,6 @@
 ---
 title: 0.8 Release
-time: 10:45am CST
+time: 7:45am CST
 ---
 
 It's been 2 years since the last significant release to Pakyow. Today I am very excited to announce that the next version, 0.8 has been officially released. It's been a long time coming.
