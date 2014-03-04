@@ -28,6 +28,9 @@ Pakyow::App.define do
     app.errors_in_browser = false
 
     logger.path = '../../shared/log'
+
+    Encoding.default_external = Encoding::UTF_8
+    Encoding.default_internal = Encoding::UTF_8
   end
 
   processor :md do |content|
