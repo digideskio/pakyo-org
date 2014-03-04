@@ -411,15 +411,15 @@ code {
   }
 }
 
+.intro {
+  color:#555;
+  font-size:16px;
+  margin-bottom:40px;
+}
+
 .warmup {
   width:650px;
   margin:auto;
-
-  .intro {
-    color:#555;
-    font-size:16px;
-    margin-bottom:40px;
-  }
 
   h1 {
     margin-bottom:10px;
@@ -508,4 +508,9 @@ code {
       margin-bottom:3px;
     }
   }
+}
+
+.community {
+  width:650px;
+  margin:auto;
 }

@@ -326,13 +326,14 @@ code {
         margin-left: 40px;
         list-style-type: disc; }
 
+.intro {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 40px; }
+
 .warmup {
   width: 650px;
   margin: auto; }
-  .warmup .intro {
-    color: #555;
-    font-size: 16px;
-    margin-bottom: 40px; }
   .warmup h1 {
     margin-bottom: 10px;
     margin-top: 20px;
@@ -390,3 +391,7 @@ code {
     margin-bottom: 10px; }
   .blog .more li {
     margin-bottom: 3px; }
+
+.community {
+  width: 650px;
+  margin: auto; }
