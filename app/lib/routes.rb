@@ -28,6 +28,17 @@ Pakyow::App.routes do
     presenter.path = 'errors/500'
   end
 
+  get 'posts' do
+    redirect '/blog', 301
+  end
+
+  get /posts\/(.*)/ do
+    parts = request.path_parts
+    parts[0] = 'blog'
+
+    redirect '/' + parts.join('/'), 301
+  end
+
   get 'blog' do
     posts = BlogPost.all
     partial(:post).scope(:post).bind(posts[0])
