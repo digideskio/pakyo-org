@@ -197,7 +197,7 @@ We also know the `img` will present an avatar. Since this is an
     html:
     <img data-prop="avatar" src="http://placehold.it/50x50" class="float-l margin-r">
 
-If continue labeling significant nodes (show link, user name, and text)
+We continue labeling significant nodes (show link, user name, and text)
 and end up with the following code:
 
     html:
