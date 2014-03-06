@@ -151,7 +151,7 @@ fix that. Create `app/views/show.html` with the following content:
 
 Reload the browser and you'll see the new view.
 
-One last thing this app needs an explanation. Let's use another aspect of
+The final thing this app needs is an explanation. Let's use another aspect of
 view building, partials, to add this to our index view. First, define 
 content for the partial by creating a `_intro.html` file in the `app/views` 
 directory with the following content:
