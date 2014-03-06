@@ -381,7 +381,7 @@ data from Twitter.
 ## Routing
 
 Now we're ready to write the routing code. This app will have two routes, each
-cooresponding with one of the pages we created earlier. Because both routes are
+corresponding with one of the pages we created earlier. Because both routes are
 dealing with a "tweet" object, it's best to define this using the [REST 
 architecture](http://en.wikipedia.org/wiki/Representational_state_transfer). 
 Pakyow makes this super easy.
