@@ -354,7 +354,7 @@ Your application is ready to talk with Twitter!
 
 Our application needs an easy way to create a Twitter client using the
 credentials we defined in our configuration. Because we'll need access to the
-client throughout many aspects our back-end code, let's create a helper.
+client throughout our back-end code, let's create a helper.
 
 Open `app/lib/helpers.rb` and add the following code inside the `Helpers` module:
 
