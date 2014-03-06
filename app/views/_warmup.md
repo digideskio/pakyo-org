@@ -517,7 +517,7 @@ Reload again and you'll see the twitter link now works properly.
 
 ## Back-End Wrapup
 
-We just added a back-end do our application with the following steps:
+We just added a back-end to our application with the following steps:
 
 1. Defined restful routes for our application
 2. Added presentation logic that applies data to the views
