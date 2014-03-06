@@ -96,7 +96,7 @@ pakyow-css and is simply to define some default styling.
 ## Creating the views
 
 Let's create an index page for our app. Since we're building a Twitter
-ready, this page will contain a list of recent tweets from Twitter, 
+reader, this page will contain a list of recent tweets from Twitter, 
 showing the user name, avatar, and contents of each tweets. Each item 
 will also link to a page that will show more details about it.
 
