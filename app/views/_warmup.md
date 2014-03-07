@@ -96,7 +96,7 @@ pakyow-css and is simply to define some default styling.
 ## Creating the views
 
 Let's create an index page for our app. Since we're building a Twitter
-ready, this page will contain a list of recent tweets from Twitter, 
+reader, this page will contain a list of recent tweets from Twitter, 
 showing the user name, avatar, and contents of each tweets. Each item 
 will also link to a page that will show more details about it.
 
@@ -151,7 +151,7 @@ fix that. Create `app/views/show.html` with the following content:
 
 Reload the browser and you'll see the new view.
 
-One last thing this app needs an explanation. Let's use another aspect of
+The final thing this app needs is an explanation. Let's use another aspect of
 view building, partials, to add this to our index view. First, define 
 content for the partial by creating a `_intro.html` file in the `app/views` 
 directory with the following content:
@@ -197,7 +197,7 @@ We also know the `img` will present an avatar. Since this is an
     html:
     <img data-prop="avatar" src="http://placehold.it/50x50" class="float-l margin-r">
 
-If continue labeling significant nodes (show link, user name, and text)
+We continue labeling significant nodes (show link, user name, and text)
 and end up with the following code:
 
     html:
@@ -354,7 +354,7 @@ Your application is ready to talk with Twitter!
 
 Our application needs an easy way to create a Twitter client using the
 credentials we defined in our configuration. Because we'll need access to the
-client throughout many aspects our back-end code, let's create a helper.
+client throughout our back-end code, let's create a helper.
 
 Open `app/lib/helpers.rb` and add the following code inside the `Helpers` module:
 
@@ -381,7 +381,7 @@ data from Twitter.
 ## Routing
 
 Now we're ready to write the routing code. This app will have two routes, each
-cooresponding with one of the pages we created earlier. Because both routes are
+corresponding with one of the pages we created earlier. Because both routes are
 dealing with a "tweet" object, it's best to define this using the [REST 
 architecture](http://en.wikipedia.org/wiki/Representational_state_transfer). 
 Pakyow makes this super easy.
@@ -517,7 +517,7 @@ Reload again and you'll see the twitter link now works properly.
 
 ## Back-End Wrapup
 
-We just added a back-end do our application with the following steps:
+We just added a back-end to our application with the following steps:
 
 1. Defined restful routes for our application
 2. Added presentation logic that applies data to the views
