@@ -133,6 +133,11 @@ body {
   text-decoration: none;
   color: #111; }
 
+#header iframe {
+  margin-left: 40px;
+  vertical-align: top;
+  margin-top: 30px; }
+
 #navigation {
   position: absolute;
   right: 30px;
