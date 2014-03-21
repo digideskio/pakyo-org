@@ -464,7 +464,7 @@ define the following binding for our `avatar` prop:
 
 This binding finds the `profile_image_url` in the tweet data being
 applied and maps it to the `src` attribute. It will be invoked whenever
-data is applied to the `avatar` prop of a `commit` scope. Reload the
+data is applied to the `avatar` prop of a `tweet` scope. Reload the
 default page of the app in your browser and you'll see that the avatars
 are now properly presented.
 
