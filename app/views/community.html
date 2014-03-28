@@ -26,4 +26,67 @@
     </a>
   </p>
 
+  <div class="contributors" data-scope="contributors">
+    <h2>Pakyow's GitHub Contributors</h2>
+
+    <ul class="contributors-list plain">
+      <li class="contributor" data-scope="contributor">
+        <span class="cover"></span>
+        <img alt="Avatar" data-prop="avatar" />
+        <div class="info-wrapper">
+          <a href="#" class="login" target="_blank" data-prop="login"></a>
+          <div class="count" data-prop="count"></div>
+          <div class="text" data-prop="grammatical_num"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
 </div>
+
+<script type="text/javascript">
+  var contributors = [];
+
+  function Contributor(element) {
+    var that = this;
+    this.element = element;
+
+    this.init = function() {
+      contributors.push(that);
+      that.element.onclick = that.handleClick;
+    }
+
+    this.handleClick = function(e) {
+      if (e.target.className.search(/login/) >= 0) {
+        e.stopPropagation();
+      } else if (that.element.className.search(/active/) >= 0) {
+        that.deactivate();
+      } else {
+        that.activate();
+      }
+    }
+
+    this.activate = function() {
+      that.deactivateAll();
+      that.element.className += ' active';
+    }
+
+    this.deactivate = function() {
+      that.element.className = that.element.className.replace(/\s?active/, '');
+    }
+
+    this.deactivateAll = function() {
+      for(var i = 0, contributor; contributor = contributors[i]; i++) {
+        contributor.deactivate();
+      }
+    }
+
+    this.init();
+  }
+
+  // initialize contributors
+  var temps = document.querySelectorAll('.contributor');
+  for(var i = 0, contributor; contributor = temps[i]; i++) {
+    new Contributor(contributor);
+  }
+</script>
