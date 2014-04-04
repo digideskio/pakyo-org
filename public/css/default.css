@@ -411,69 +411,62 @@ code {
     margin-top: 60px; }
     .community .contributors h2 {
       margin-bottom: 20px; }
-  .community .contributors-list {
-    margin: 0; }
-    .community .contributors-list .contributor {
-      margin-top: -4px;
-      margin-right: -4px;
-      position: relative;
-      display: inline-block;
-      width: 180px;
-      height: 180px; }
-      .community .contributors-list .contributor .cover {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background: #000;
-        opacity: 0.55;
-        transition: opacity 0.5s;
-        -webkit-transition: opacity 0.5s;
-        -moz-transition: opacity 0.5s;
-        -o-transition: opacity 0.5s; }
-        .community .contributors-list .contributor .cover:hover {
-          opacity: 0; }
-      .community .contributors-list .contributor img {
-        width: 180px;
-        height: 180px; }
-      .community .contributors-list .contributor .info-wrapper {
-        display: none;
-        position: absolute;
-        top: 0px;
-        right: 179px;
-        height: 180px;
-        width: 180px;
-        z-index: 1;
-        background: #FF0013;
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
-        color: #fff; }
-        .community .contributors-list .contributor .info-wrapper .login {
-          display: block;
-          margin-top: 45px;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-          color: #fff;
-          text-decoration: none;
-          font-weight: normal; }
-          .community .contributors-list .contributor .info-wrapper .login:hover {
-            text-decoration: underline; }
-        .community .contributors-list .contributor .info-wrapper .count {
-          font-size: 30px;
-          font-weight: 400;
-          line-height: 30px;
-          margin: 10px 0; }
-      .community .contributors-list .contributor.active .cover {
+  .community .contributor-blocks .contributor {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    background-size: 180px; }
+    .community .contributor-blocks .contributor .cover {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: #000;
+      opacity: 0.55;
+      transition: opacity 0.5s;
+      -webkit-transition: opacity 0.5s;
+      -moz-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s; }
+      .community .contributor-blocks .contributor .cover:hover {
         opacity: 0; }
-      .community .contributors-list .contributor.active .info-wrapper {
-        display: block; }
-      .community .contributors-list .contributor:hover {
-        cursor: pointer; }
-      .community .contributors-list .contributor:first-child .info-wrapper {
-        right: -179px; }
-      .community .contributors-list .contributor:nth-child(5n+1) .info-wrapper {
-        right: -179px; }
+    .community .contributor-blocks .contributor .info-wrapper {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 180px;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      background: #FF0013;
+      text-align: center;
+      font-size: 20px;
+      line-height: 20px;
+      color: #fff; }
+      .community .contributor-blocks .contributor .info-wrapper .username {
+        display: block;
+        margin-top: 45px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-weight: normal; }
+        .community .contributor-blocks .contributor .info-wrapper .username:hover {
+          text-decoration: underline; }
+      .community .contributor-blocks .contributor .info-wrapper .count {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 10px 0; }
+    .community .contributor-blocks .contributor.active .cover {
+      opacity: 0; }
+    .community .contributor-blocks .contributor.active .info-wrapper {
+      display: block; }
+    .community .contributor-blocks .contributor:hover {
+      cursor: pointer; }
+    .community .contributor-blocks .contributor:nth-child(5n) .info-wrapper {
+      left: -180px; }

@@ -32,16 +32,6 @@ Pakyow::App.routes do
     redirect '/docs', 301
   end
 
-  get 'community' do
-    begin
-      contributors = Octokit.contributors('metabahn/pakyow')
-      view.scope(:contributors).scope(:contributor).apply(contributors)
-    rescue
-      puts "Error building contributors: #{$!}"
-      view.scope(:contributors).remove();
-    end
-  end
-
   get 'feed' do
     redirect '/blog/feed', 301
   end

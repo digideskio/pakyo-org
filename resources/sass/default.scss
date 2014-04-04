@@ -539,16 +539,15 @@ code {
     }
   }
 
-  .contributors-list {
-    margin:0;
+  .contributor-blocks {
 
     .contributor {
-      margin-top:-4px;
-      margin-right:-4px;
+      vertical-align:top;
       position:relative;
       display:inline-block;
       width:180px;
       height:180px;
+      background-size:180px;
 
       .cover {
         display:block;
@@ -566,18 +565,13 @@ code {
         }
       }
 
-      img {
-        width:180px;
-        height:180px;
-      }
-
       .info-wrapper {
         display:none;
         position:absolute;
         top:0px;
-        right:179px;
-        height:180px;
-        width:180px;
+        left:180px;
+        height:100%;
+        width:100%;
         z-index:1;
 
         background:#FF0013;
@@ -586,7 +580,7 @@ code {
         line-height:20px;
         color:#fff;
 
-        .login {
+        .username {
           display:block;
           margin-top:45px;
           text-overflow:ellipsis;
@@ -607,10 +601,6 @@ code {
           line-height:30px;
           margin:10px 0;
         }
-
-        .text {
-
-        }
       }
 
       &.active {
@@ -627,15 +617,9 @@ code {
         cursor:pointer;
       }
 
-      &:first-child {
+      &:nth-child(5n) {
         .info-wrapper {
-          right:-179px;
-        }
-      }
-
-      &:nth-child(5n+1) {
-        .info-wrapper {
-          right:-179px;
+          left:-180px;
         }
       }
     }
