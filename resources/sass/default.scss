@@ -531,97 +531,10 @@ code {
   margin:auto;
 
   .contributors {
-    position:relative;
     margin-top:60px;
 
     h2 {
       margin-bottom:20px;
-    }
-  }
-
-  .contributor-blocks {
-
-    .contributor {
-      vertical-align:top;
-      position:relative;
-      display:inline-block;
-      width:180px;
-      height:180px;
-      background-size:180px;
-
-      .cover {
-        display:block;
-        position:absolute;
-        top:0;
-        right:0;
-        left:0;
-        bottom:0;
-        background:#000;
-        opacity:0.55;
-        @include transition(opacity, 0.5s);
-
-        &:hover {
-          opacity:0;
-        }
-      }
-
-      .info-wrapper {
-        display:none;
-        position:absolute;
-        top:0px;
-        left:180px;
-        height:100%;
-        width:100%;
-        z-index:1;
-
-        background:#FF0013;
-        text-align:center;
-        font-size:20px;
-        line-height:20px;
-        color:#fff;
-
-        .username {
-          display:block;
-          margin-top:45px;
-          text-overflow:ellipsis;
-          white-space: nowrap;
-          overflow:hidden;
-          color:#fff;
-          text-decoration:none;
-          font-weight:normal;
-
-          &:hover {
-            text-decoration:underline;
-          }
-        }
-
-        .count {
-          font-size:30px;
-          font-weight:400;
-          line-height:30px;
-          margin:10px 0;
-        }
-      }
-
-      &.active {
-        .cover {
-          opacity:0;
-        }
-
-        .info-wrapper {
-          display:block;
-        }
-      }
-
-      &:hover {
-        cursor:pointer;
-      }
-
-      &:nth-child(5n) {
-        .info-wrapper {
-          left:-180px;
-        }
-      }
     }
   }
 }

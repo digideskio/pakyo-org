@@ -5,6 +5,8 @@ pui.component('contributor-blocks', function(doc) {
   var active_contributor;
 
   this.init = function() {
+    if (!that.config.blockSize) that.config.blockSize = 150; // default size
+
     var req = new XMLHttpRequest();
     req.onreadystatechange = function() {
       if (req.readyState == 4 && req.status == 200) { //SUCCESS
@@ -28,12 +30,20 @@ pui.component('contributor-blocks', function(doc) {
       block.className = 'contributor';
       block.style.backgroundImage = "url('" + contributor.avatar_url + "')";
       block.setAttribute('data-ui', 'contributor-block');
+      block.style.width = that.config.blockSize + 'px';
+      block.style.height = that.config.blockSize + 'px';
+      block.style.backgroundSize = that.config.blockSize + 'px';
 
       var cover = document.createElement('div');
       cover.className = 'cover';
+      if (!!that.config.tintColor) cover.style.background = that.config.tintColor;
       block.appendChild(cover);
 
       var info = document.createElement('div');
+      info.style.fontSize = (that.config.blockSize / 7.5) + 'px';
+      info.style.lineHeight = (that.config.blockSize / 7.5) + 'px';
+      if (!!that.config.bgColor) info.style.background = that.config.bgColor;
+      if (!!that.config.txtColor) info.style.color = that.config.txtColor;
       info.className = 'info-wrapper';
 
       var username = document.createElement('a');
@@ -41,11 +51,15 @@ pui.component('contributor-blocks', function(doc) {
       username.href = contributor.html_url;
       username.target = '_blank';
       username.innerHTML = contributor.login;
+      username.style.marginTop = (that.config.blockSize / 5) + 'px';
+      if (!!that.config.txtColor) username.style.color = that.config.txtColor;
       info.appendChild(username);
 
       var count = document.createElement('div');
       count.className = 'count';
       count.innerHTML = contributor.contributions;
+      count.style.fontSize = (that.config.blockSize / 5) + 'px';
+      count.style.lineHeight = (that.config.blockSize / 5) + 'px';
       info.appendChild(count);
 
       var text = document.createElement('div');
@@ -90,6 +104,12 @@ pui.component('contributor-block', function(doc) {
   }
 
   this.handleClick = function(e) {
+    if (doc.offsetLeft + (doc.offsetWidth * 2) > doc.parentNode.offsetLeft + doc.parentNode.offsetWidth) {
+      doc.querySelector('.info-wrapper').className += ' leftside';
+    } else {
+      doc.querySelector('.info-wrapper').className += ' rightside';
+    }
+
     if (e.target.className.search(/username/) >= 0) {
       e.stopPropagation();
     } else if (doc.className.search(/active/) >= 0) {
