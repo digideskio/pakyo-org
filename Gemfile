@@ -8,7 +8,6 @@ gem "rake"
 gem "rdiscount"
 gem "pygments.rb"
 gem "builder", "~>2.0"
-gem "octokit", "~> 2.0"
 
 group :development do
   gem "capistrano", "2.15.5"

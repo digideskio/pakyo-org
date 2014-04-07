@@ -5,7 +5,6 @@ require 'pakyow'
 require 'rdiscount'
 require 'pygments'
 require 'builder'
-require 'octokit'
 
 require 'sass/plugin/rack'
 Sass::Plugin.options[:template_location] = './resources/sass'
