@@ -47,7 +47,7 @@ Go to [localhost:3000](http://localhost:3000) to see your app running!
 
 Pakyow encourages a view-first development process. The goal of this process 
 is to use the app in the browser as early as possible. Pakyow accomplishes this 
-by allowing a front-end developer or designer create a navigable prototype without 
+by allowing a front-end developer or designer to create a navigable prototype without 
 writing any back-end code. This means that even with a limited skillset, you can 
 create an app that your team (and project stakeholders) can interact with.
 
