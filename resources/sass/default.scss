@@ -19,6 +19,7 @@ h1 {
   color:#333;
 }
 
+
 h2 {
   font-size:16px;
   text-transform: uppercase;
@@ -367,7 +368,7 @@ code {
 
     h4 {
       text-transform: uppercase;
-      font-size:14px !important;
+      font-size:16px !important;
       font-family:"futura-pt", Helvetica, sans-serif !important;
       margin-bottom:5px;
       // font-family:futura;
@@ -375,7 +376,13 @@ code {
     }
 
     p {
-      font-size:13px;
+      font-size:16px;
+    }
+    .friction {
+      float: right;
+      p {
+        font-size:20px;
+      }
     }
 
     .version {
@@ -399,8 +406,16 @@ code {
 #start {
   margin-top:60px;
 
+  h1 {
+    border-bottom: 1px solid #555
+  }
+
   h2 {
     margin:30px 0 10px;
+  }
+
+  p {
+    padding-left:15px;
   }
 
   ul {
@@ -419,20 +434,35 @@ code {
   }
 }
 
+
+
 .intro {
   color:#555;
   font-size:16px;
   margin-bottom:40px;
+  font-style: italic;
 }
+
 
 .warmup {
   width:650px;
   margin:auto;
 
-  h1 {
+  .title {
+    font-size:46px;
+    font-family:"futura-pt", Helvetica, sans-serif;
+    text-align:center;
+    color:#ed1f24;
     margin-bottom:10px;
     margin-top:20px;
-    font-size:24px;
+    border-bottom: none;
+    }
+
+  h1 {
+    font-size:26px;
+    border-bottom:2px solid #333;
+    padding-bottom:5px;
+    margin-top:60px;
   }
 
   h2 {
@@ -454,6 +484,25 @@ code {
     }
   }
 }
+
+.nav {
+  width:225px;
+  height:100%;
+  z-index:10;
+  top:70px;
+  ol{
+    li{
+      a{
+        text-decoration:none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
 
 .features {
   margin-top:60px;
@@ -529,6 +578,25 @@ code {
 .community {
   width:900px;
   margin:auto;
+
+  h1{
+    font-size:35px;
+    text-align:center;
+    margin-bottom:5px;
+  }
+
+  .intro{
+    text-align:center;
+    font-size:20px;
+  }
+
+  .action {
+    padding-bottom: 20px;
+  }
+
+  .list {
+    padding-left:20px;
+  }
 
   .contributors {
     margin-top:60px;

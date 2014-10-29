@@ -1,4 +1,4 @@
-# Installation
+<h1 id="installation">1. Installation</h1>
 
 Pakyow is easy to install, but it relies on Ruby and RubyGems. Make sure
 these are installed first. Here are some links that will help you install these
@@ -14,15 +14,15 @@ Once Ruby/RubyGems are installed, open a terminal prompt and type:
 
 Installation is complete!
 
-# Reference App
+<h1 id="reference">2. Reference</h1>
 
 If you get stuck at any point reference the warmup app on [GitHub](https://github.com/metabahn/pakyow-warmup). And if
-you're still stuck, by all means ask for help on the [mailing list](http://groups.google.com/group/pakyow), 
+you're still stuck, by all means ask for help on the [mailing list](http://groups.google.com/group/pakyow),
 or on [Twitter](http://twitter.com/pakyow)!
 
 Btw, you can find the app running at [pakyow-warmup.herokuapp.com](http://pakyow-warmup.herokuapp.com).
 
-# Project Generation
+<h1 id="projectgen">3. Project Generation</h1>
 
 Pakyow ships with command-line tools that help you generate and manage
 your projects. These tools make creating a new project really easy.
@@ -43,12 +43,12 @@ running the following command:
 
 Go to [localhost:3000](http://localhost:3000) to see your app running!
 
-# Developing View First
+<h1 id="viewfirst">4. Development View First</h1>
 
-Pakyow encourages a view-first development process. The goal of this process 
-is to use the app in the browser as early as possible. Pakyow accomplishes this 
-by allowing a front-end developer or designer to create a navigable prototype without 
-writing any back-end code. This means that even with a limited skillset, you can 
+Pakyow encourages a view-first development process. The goal of this process
+is to use the app in the browser as early as possible. Pakyow accomplishes this
+by allowing a front-end developer or designer to create a navigable prototype without
+writing any back-end code. This means that even with a limited skillset, you can
 create an app that your team (and project stakeholders) can interact with.
 
 Views are easy in Pakyow, and are just HTML. There's no extended syntax. All of the
@@ -71,7 +71,7 @@ defined in the `app/views/_templates` directory. Open the root project directory
 into a text editor and have a look around.
 
 Every Pakyow template defines one or more containers. Later on in the process,
-we'll create pages that define content for these containers. Containers are 
+we'll create pages that define content for these containers. Containers are
 defined with an inline comment:
 
     html:
@@ -93,11 +93,11 @@ you see a class name on a node, it's safe to assume it is related to
 pakyow-css and is simply to define some default styling.
 </div>
 
-## Creating the views
+<h2 id="creatingviews">Creating Views</h2>
 
 Let's create an index page for our app. Since we're building a Twitter
-reader, this page will contain a list of recent tweets from Twitter, 
-showing the user name, avatar, and contents of each tweets. Each item 
+reader, this page will contain a list of recent tweets from Twitter,
+showing the user name, avatar, and contents of each tweets. Each item
 will also link to a page that will show more details about it.
 
 Create `app/views/index.html` with the following content:
@@ -152,8 +152,8 @@ fix that. Create `app/views/show.html` with the following content:
 Reload the browser and you'll see the new view.
 
 The final thing this app needs is an explanation. Let's use another aspect of
-view building, partials, to add this to our index view. First, define 
-content for the partial by creating a `_intro.html` file in the `app/views` 
+view building, partials, to add this to our index view. First, define
+content for the partial by creating a `_intro.html` file in the `app/views`
 directory with the following content:
 
     html:
@@ -175,17 +175,17 @@ Reload the index page in your browser and you'll see the intro has been
 composed into the template. This intro could be included into any page,
 such as `show.html`. Create it once, use it many times!
 
-## Data Knowledge
+<h2 id="data">Data Knowledge</h2>
 
-At this point we have created a navigable prototype of our app, and we 
-didn't write a single line of back-end code! The next step is to build 
-the back-end that will populate our views with data. None of this 
-back-end code will be mixed in to our view. Instead, it will be added 
+At this point we have created a navigable prototype of our app, and we
+didn't write a single line of back-end code! The next step is to build
+the back-end that will populate our views with data. None of this
+back-end code will be mixed in to our view. Instead, it will be added
 as a layer that interacts with our view.
 
 For this to work we want the view to describe the data it intends to
 present. Looking at the `index.html` view it's pretty easy to identify the
-data that's being represented. For example, we can see that the `div` 
+data that's being represented. For example, we can see that the `div`
 represents a tweet. Since this is a *type* of data we label it as a scope:
 
     html:
@@ -222,8 +222,8 @@ and end up with the following code:
 These attributes gives Pakyow the knowledge it needs to properly apply our
 data to the view. Pakyow keeps the view completely separate from the
 back-end, allowing the front-end to fully define how the data in the
-application should be presented. If you haven't already, add the scopes 
-and props to your `index.html` view. Let's also describe the data presented 
+application should be presented. If you haven't already, add the scopes
+and props to your `index.html` view. Let's also describe the data presented
 by `show.html`:
 
     html:
@@ -251,7 +251,7 @@ by `show.html`:
       </p>
     </div>
 
-## Front-End Wrapup
+<h2 id="front-end">Front-End Wrapup</h2>
 
 At this point we've done the following:
 
@@ -260,7 +260,7 @@ At this point we've done the following:
 
 Click around, admire our progress, and let's move on.
 
-# Adding the Back-End
+<h1 id="back-end">5. Adding the Back-End</h1>
 
 Next we'll write the back-end code necessary to present our data. No
 changes will be required to the views we've already created, leaving our
@@ -273,7 +273,7 @@ prototype intact.
   prototype environment: pakyow server prototype
 </div>
 
-## Twitter Integration
+<h2 id="integration">Twitter Intergration</h2>
 
 We'll be interacting with Twitter through their developer API. They provide a
 Ruby library to make this easier. There are a few steps to get
@@ -293,7 +293,7 @@ look like this:
 
     gem "twitter"
 
-Stop the server (Ctrl-C) and run `bundle install` to install the gem. Then require 
+Stop the server (Ctrl-C) and run `bundle install` to install the gem. Then require
 it at the top of `app.rb`:
 
     ruby:
@@ -350,7 +350,7 @@ The entire file should look like this:
 
 Your application is ready to talk with Twitter!
 
-## Twitter Helper
+<h2 id="helper">Twitter Helper</h2>
 
 Our application needs an easy way to create a Twitter client using the
 credentials we defined in our configuration. Because we'll need access to the
@@ -378,12 +378,12 @@ When we call the `client` method from our back-end code, it will configure a new
 instance of the Twitter client and return it. We'll use this object to fetch our
 data from Twitter.
 
-## Routing
+<h2 id="routing">Routing</h2>
 
 Now we're ready to write the routing code. This app will have two routes, each
 corresponding with one of the pages we created earlier. Because both routes are
-dealing with a "tweet" object, it's best to define this using the [REST 
-architecture](http://en.wikipedia.org/wiki/Representational_state_transfer). 
+dealing with a "tweet" object, it's best to define this using the [REST
+architecture](http://en.wikipedia.org/wiki/Representational_state_transfer).
 Pakyow makes this super easy.
 
 Open `app/lib/routes.rb` and add the following code:
@@ -402,7 +402,7 @@ route that responds to the 'list' REST method:
     end
 
 The code block for the list route will be invoked when we make a GET request
-to '/'. We also need a route that presents information about a particular tweet. 
+to '/'. We also need a route that presents information about a particular tweet.
 This falls under the 'show' REST method:
 
     ruby:
@@ -416,7 +416,7 @@ This falls under the 'show' REST method:
 
 Now let's add our logic to these empty route definitions.
 
-## Presentation Logic
+<h2 id="logic">Presentation Logic</h2>
 
 The first thing the `list` route will do is fetch the tweets that will be
 displayed. We can use the `client` helper we defined earlier to search for
@@ -432,9 +432,9 @@ directory. All that's left is to apply the data:
     ruby:
     view.scope(:tweet).apply(tweets)
 
-This bit of code finds and applies data to the node that represents a `tweet`. 
-The `apply` method alters the structure of the view to match the structure of 
-the data being applied. In this case, it repeats the `tweet` node once for 
+This bit of code finds and applies data to the node that represents a `tweet`.
+The `apply` method alters the structure of the view to match the structure of
+the data being applied. In this case, it repeats the `tweet` node once for
 every tweet. Once the structures match, the data is easily mapped to the view.
 
 The full list route should look like this:
@@ -477,12 +477,12 @@ presented:
     end
 
 Unlike the `avatar` binding which mapped data to the `src` attribute,
-this binding simply returns the user > name data as the content for 
-the `user` prop. Reload the browser and you'll see the user names are 
+this binding simply returns the user > name data as the content for
+the `user` prop. Reload the browser and you'll see the user names are
 now being presented correctly.
 
-All of our data is now being presented. There's still one problem -- 
-that is, the "View Details" link needs to go to the proper URI. Define 
+All of our data is now being presented. There's still one problem --
+that is, the "View Details" link needs to go to the proper URI. Define
 the following binding for the `show` prop:
 
     ruby:
@@ -515,7 +515,7 @@ work we must define one last binding:
 
 Reload again and you'll see the twitter link now works properly.
 
-## Back-End Wrapup
+<h2 id="wrapup">Back-End Wrapup</h2>
 
 We just added a back-end to our application with the following steps:
 
@@ -525,7 +525,7 @@ We just added a back-end to our application with the following steps:
 
 Development is complete; let's ship it!
 
-# Deployment
+<h1 id="development">6. Development</h1>
 
 We'll be deploying our application to Heroku. The process is
 summarized below, but you can read about this in more detail
@@ -594,7 +594,7 @@ Go to the app URL and find your app running in the cloud!
     console:
     heroku open
 
-# Next Steps
+<h1 id="nextsteps">7. Next Steps</h1>
 
 We hope this warmup has been been enjoyable. If you have any questions, please
 don't hesitate to ask them here, on the [mailing
