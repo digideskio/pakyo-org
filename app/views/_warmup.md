@@ -1,4 +1,4 @@
-<h1 id="installation">1. Installation</h1>
+<h1 class="divide" id="installation">1. Installation</h1>
 
 Pakyow is easy to install, but it relies on Ruby and RubyGems. Make sure
 these are installed first. Here are some links that will help you install these
@@ -14,7 +14,7 @@ Once Ruby/RubyGems are installed, open a terminal prompt and type:
 
 Installation is complete!
 
-<h1 id="reference">2. Reference</h1>
+<h1 class="divide" id="reference">2. Reference</h1>
 
 If you get stuck at any point reference the warmup app on [GitHub](https://github.com/metabahn/pakyow-warmup). And if
 you're still stuck, by all means ask for help on the [mailing list](http://groups.google.com/group/pakyow),
@@ -22,7 +22,7 @@ or on [Twitter](http://twitter.com/pakyow)!
 
 Btw, you can find the app running at [pakyow-warmup.herokuapp.com](http://pakyow-warmup.herokuapp.com).
 
-<h1 id="projectgen">3. Project Generation</h1>
+<h1 class="divide" id="projectgen">3. Project Generation</h1>
 
 Pakyow ships with command-line tools that help you generate and manage
 your projects. These tools make creating a new project really easy.
@@ -43,7 +43,7 @@ running the following command:
 
 Go to [localhost:3000](http://localhost:3000) to see your app running!
 
-<h1 id="viewfirst">4. Development View First</h1>
+<h1 class="divide" id="viewfirst">4. Development View First</h1>
 
 Pakyow encourages a view-first development process. The goal of this process
 is to use the app in the browser as early as possible. Pakyow accomplishes this
@@ -157,7 +157,7 @@ content for the partial by creating a `_intro.html` file in the `app/views`
 directory with the following content:
 
     html:
-    <h1>
+    <h1 class="divide">
       Pakyow Warmup
     </h1>
 
@@ -260,7 +260,7 @@ At this point we've done the following:
 
 Click around, admire our progress, and let's move on.
 
-<h1 id="back-end">5. Adding the Back-End</h1>
+<h1 class="divide" id="back-end">5. Adding the Back-End</h1>
 
 Next we'll write the back-end code necessary to present our data. No
 changes will be required to the views we've already created, leaving our
@@ -525,7 +525,7 @@ We just added a back-end to our application with the following steps:
 
 Development is complete; let's ship it!
 
-<h1 id="development">6. Development</h1>
+<h1 class="divide" id="development">6. Development</h1>
 
 We'll be deploying our application to Heroku. The process is
 summarized below, but you can read about this in more detail
@@ -594,14 +594,6 @@ Go to the app URL and find your app running in the cloud!
     console:
     heroku open
 
-<h1 id="nextsteps">7. Next Steps</h1>
+<h1 class="divide" id="nextsteps">7. Next Steps</h1>
 
-We hope this warmup has been been enjoyable. If you have any questions, please
-don't hesitate to ask them here, on the [mailing
-list](http://groups.google.com/group/pakyow), or on [Twitter](http://twitter.com/pakyow)
-
-Happy shipping!
-
--The Pakyow Team
-
-<!-- @include disqus -->
+TODO
