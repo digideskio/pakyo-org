@@ -1,22 +1,37 @@
 @import "defs";
 
+$font-main: "museo-sans", sans-serif;
+$font-header: "proxima-nova", sans-serif;
+$font-brand: "futura-pt", sans-serif;
+
+$color-black: #333;
+$color-red: #ff0000;
+$color-gray: #999;
+$color-blue: #19558d;
+
 html, body, #main {
-  font-family:"pragmatica-web", Helvetica, sans-serif;
-  font-size:14px;
-  color:#222;
+  font-family:$font-main;
+  font-size:13px;
+  color:$color-black;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family:"futura-pt", Helvetica, sans-serif;
+  font-family:$font-main;
   line-height:normal;
 }
 
 h1 {
-  font-size:28px;
-  font-weight:normal;
-  font-family:skolar, serif;
+  font-size:24px;
+  font-weight:600;
+  font-family:$font-header;
   margin:50px 0 30px;
-  color:#333;
+  color:$color-black;
+
+  &.divide {
+    border-bottom:2px solid $color-gray;
+    padding-bottom:5px;
+    margin-top:60px;
+  }
 }
 
 
@@ -27,13 +42,21 @@ h2 {
 }
 
 h3 {
-  font-family: "pragmatica-web";
+  font-family:$font-main;
   text-transform: uppercase;
   font-size:12px;
 }
 
 a {
-  font-weight:bold;
+  text-decoration: none;
+}
+
+p, li {
+  a {
+    color: $color-blue;
+    border-bottom: 1px solid #d1dde8;
+    padding-bottom:1px;
+  }
 }
 
 #footer {
@@ -51,8 +74,8 @@ a {
 
   a {
     font-weight:normal;
-    color:#aaa;
-    text-decoration:underline;
+    color:$color-gray;
+    border-color:lighten($color-gray, 30%);
   }
 }
 
@@ -65,7 +88,7 @@ input[type='text']:focus, input[type='password']:focus, textarea:focus {
   border-color: #8dabd4; }
 
 input[type='submit'], input[type='button'], button, .button {
-  font: 12px "pragmatica-web", Helvetica, sans-serif;
+  font: 12px $font-main;
   color: #000;
   cursor: pointer;
   font-size: 12px;
@@ -139,10 +162,13 @@ body {
 #header img {
   margin-top:13px;
   margin-left:30px;
+  width:45px;
+  height:45px;
 }
 
 #header h1 {
-  font-family:"futura-pt", Helvetica, sans-serif;
+  font-weight:normal;
+  font-family:$font-brand;
   font-size:36px;
   display:inline-block;
   text-transform:lowercase;
@@ -151,8 +177,9 @@ body {
   margin-top:10px;
 
   .version {
+    font-weight:500;
     font-size:11px;
-    color:#999;
+    color:$color-gray;
   }
 }
 
@@ -189,16 +216,16 @@ body {
 }
 
 #navigation li a {
-  color:#555;
-  font-family:"pragmatica-web", Helvetica, sans-serif;
+  color:$color-black;
+  font-family:$font-main;
   font-weight:normal;
-  // text-transform:uppercase;
-  text-decoration:none;
-  font-size:14px;
+  text-transform:uppercase;
+  border:0;  
+  // font-size:14px;
 }
 
 #navigation li a:hover {
-  text-decoration: underline;
+  color:$color-red;
 }
 
 #middle {
@@ -209,7 +236,7 @@ body {
   padding:10px 0;
   background:#FE0000;
   color:#930000;
-  font-family:futura-pt, Helvetica, sans-serif;
+  font-family:$font-brand;
   font-size:36px;
   border-bottom:1px solid #c40000;
   // text-shadow:rgba(0,0,0,0.25) 1px 1px 0px;
@@ -286,7 +313,7 @@ body {
 }
 
 #toc li a {
-  font-family:futura-pt, Helvetica, sans-serif;
+  font-family:$font-brand;
   font-size:14px;
   font-weight:normal;
 }
@@ -309,10 +336,11 @@ body {
 }
 
 .big {
-  color:#555;
-  font-size:26px;
+  // color:$color-black;
+  font-size:24px;
   margin-bottom:60px;
   text-align:justify;
+  font-weight:500;
 }
 
 code {
@@ -352,7 +380,7 @@ code {
   > div {
     background:#eee;
     margin-bottom:20px;
-    padding:10px;
+    padding:15px;
     border:1px solid #ccc;
     border-top:0;
     border-left:0;
@@ -366,23 +394,9 @@ code {
     -ms-box-sizing:border-box;
     box-sizing:border-box;
 
-    h4 {
-      text-transform: uppercase;
-      font-size:16px !important;
-      font-family:"futura-pt", Helvetica, sans-serif !important;
-      margin-bottom:5px;
-      // font-family:futura;
-      // font-weight:500;
-    }
-
     p {
-      font-size:16px;
-    }
-    .friction {
-      float: right;
-      p {
-        font-size:20px;
-      }
+      margin:0;
+      font-size:15px;
     }
 
     .version {
@@ -391,9 +405,14 @@ code {
       font-size:11px;
       // text-transform:uppercase;
       color:#999;
-      font-family:futura-pt, Helvetica, sans-serif;
+      font-family:$font-brand;
     }
   }
+}
+
+.moving {
+  font-size:15px;
+  margin-top:15px;
 }
 
 .rumble {
@@ -418,55 +437,56 @@ code {
     padding-left:15px;
   }
 
-  ul {
+  > ul {
     margin:0;
     list-style-type:none;
 
-    li {
-      font-size:14px;
-      margin-bottom:10px;
+    > li {
+      font-size:13px;
+      margin-bottom:30px;
 
       ul {
         margin-left:40px;
         list-style-type: disc;
+
+        li {
+          margin-bottom:10px;
+        }
       }
     }
+  }
+
+  code {
+    border:none;
+    padding-left:15px;
   }
 }
 
 
 
 .intro {
-  color:#555;
   font-size:16px;
   margin-bottom:40px;
-  font-style: italic;
 }
 
 
 .warmup {
+  font-size:13px;
   width:650px;
   margin:auto;
 
   .title {
     font-size:46px;
-    font-family:"futura-pt", Helvetica, sans-serif;
+    font-family:$font-brand;
     text-align:center;
     color:#ed1f24;
     margin-bottom:10px;
     margin-top:20px;
     border-bottom: none;
-    }
-
-  h1 {
-    font-size:26px;
-    border-bottom:2px solid #333;
-    padding-bottom:5px;
-    margin-top:60px;
   }
 
   h2 {
-    font-size:16px;
+    font-size:15px;
     text-transform:uppercase;
     margin-top:20px;
     margin-bottom:10px;
@@ -480,29 +500,11 @@ code {
     line-height:1.5em;
 
     li {
-      margin-bottom:5px;
+      font-size:15px;
+      margin-bottom:15px;
     }
   }
 }
-
-.nav {
-  width:225px;
-  height:100%;
-  z-index:10;
-  top:70px;
-  ol{
-    li{
-      a{
-        text-decoration:none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-
 
 .features {
   margin-top:60px;
@@ -517,6 +519,10 @@ code {
     padding-right:10px;
     border-right:1px solid #999;
     margin-bottom:10px;
+  }
+
+  li {
+    font-size:13px;
   }
 }
 
@@ -549,7 +555,7 @@ code {
 
       a {
         text-decoration:none;
-        color:#222;
+        color:$color-black;
       }
     }
 
@@ -598,17 +604,6 @@ code {
 .community {
   width:900px;
   margin:auto;
-
-  h1{
-    font-size:35px;
-    text-align:center;
-    margin-bottom:5px;
-  }
-
-  .intro{
-    text-align:center;
-    font-size:20px;
-  }
 
   .action {
     padding-bottom: 20px;
