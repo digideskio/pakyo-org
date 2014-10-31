@@ -405,12 +405,8 @@ code {
 .blog {
   width: 650px;
   margin: auto; }
-  .blog .subscribe {
-    float: right;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 13px;
-    margin-top: -50px; }
+  .blog .top .subscribe {
+    float: right; }
   .blog .post {
     margin-bottom: 120px; }
     .blog .post h1 {
@@ -430,6 +426,20 @@ code {
     margin-bottom: 10px; }
   .blog .more li {
     margin-bottom: 3px; }
+
+#blogarchive {
+  width: 550px;
+  margin: auto; }
+  #blogarchive h1 {
+    border-bottom: 1px solid #555; }
+  #blogarchive h2 {
+    padding: 15px 0 15px 0; }
+  #blogarchive a {
+    text-decoration: none;
+    border-bottom: 1px dashed #ed1f24;
+    color: #ed1f24; }
+  #blogarchive .post {
+    padding-left: 15px; }
 
 .community {
   width: 900px;
