@@ -58,7 +58,7 @@ Pakyow::App.routes do
 
     if post.found
       presenter.path = 'blog/show'
-      view.title = "pakyow | #{post.title}"
+      view.title = "Pakyow &#8250; #{post.title}"
 
       partial(:post).scope(:post).with do
         bind(post)

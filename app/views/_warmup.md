@@ -81,7 +81,7 @@ A nameless `default` container is defined for you in the `pakyow.html`
 template. During construction, Pakyow composes page content with the
 template to create the final view sent back in the response.
 
-<div class="callout">
+<p class="callout">
 You might notice the div that contains a `container-1` class. This
 class is defined in the pakyow-css library included with every generated
 app. Explaining the library is beyond the scope of this warmup, but you
@@ -91,7 +91,7 @@ can read more <a href="http://github.com/metabahn/pakyow-css">here</a>.
 There are several uses of pakyow-css throughout this warmup. Anytime
 you see a class name on a node, it's safe to assume it is related to
 pakyow-css and is simply to define some default styling.
-</div>
+</p>
 
 <h2 id="creatingviews">Creating Views</h2>
 
@@ -266,12 +266,12 @@ Next we'll write the back-end code necessary to present our data. No
 changes will be required to the views we've already created, leaving our
 prototype intact.
 
-<div class="callout">
+<p class="callout">
   To see the prototype at any point (even once the back-end is added),
   run the application in the `prototype` environment. This can be done
   by stopping the application server (Ctrl-C) and restarting it in the
   prototype environment: pakyow server prototype
-</div>
+</p>
 
 <h2 id="integration">Twitter Intergration</h2>
 
@@ -458,7 +458,7 @@ define the following binding for our `avatar` prop:
     ruby:
     scope :tweet do
       binding :avatar do
-        { src: bindable[:user][:profile_image_url] }
+        { src: bindable.user[:profile_image_url] }
       end
     end
 
@@ -473,7 +473,7 @@ presented:
 
     ruby:
     binding :user do
-      bindable[:user][:name]
+      bindable.user[:name]
     end
 
 Unlike the `avatar` binding which mapped data to the `src` attribute,
@@ -510,7 +510,7 @@ work we must define one last binding:
 
     ruby:
     binding :twitter do
-      { href: "http://twitter.com/#{bindable[:user][:screen_name]}/status/#{bindable[:id]}" }
+      { href: "http://twitter.com/#{bindable.user[:screen_name]}/status/#{bindable[:id]}" }
     end
 
 Reload again and you'll see the twitter link now works properly.
@@ -525,7 +525,7 @@ We just added a back-end to our application with the following steps:
 
 Development is complete; let's ship it!
 
-<h1 class="divide" id="development">6. Development</h1>
+<h1 class="divide" id="deployment">6. Deployment</h1>
 
 We'll be deploying our application to Heroku. The process is
 summarized below, but you can read about this in more detail
@@ -596,4 +596,6 @@ Go to the app URL and find your app running in the cloud!
 
 <h1 class="divide" id="nextsteps">7. Next Steps</h1>
 
-TODO
+Congrats on shipping your first Pakyow app! Be sure and tell your friends. What will you build next?
+
+To level up your skills, [checkout the docs](/docs) &#8250;

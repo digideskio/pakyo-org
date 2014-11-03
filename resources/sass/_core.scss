@@ -1,0 +1,204 @@
+@import "defs";
+
+$font-main: "museo-sans", sans-serif;
+$font-header: "proxima-nova", sans-serif;
+$font-brand: "futura-pt", sans-serif;
+
+$color-black: #333;
+$color-red: #ff0000;
+$color-gray: #999;
+$color-blue: #19558d;
+
+html, body, #main {
+  font-family:$font-main;
+  font-size:14px;
+  color:$color-black;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:$font-main;
+  line-height:normal;
+}
+
+h1 {
+  font-size:24px;
+  font-weight:600;
+  font-family:$font-header;
+  margin:50px 0 30px;
+  color:$color-black;
+
+  &.divide {
+    border-bottom:2px solid $color-gray;
+    padding-bottom:5px;
+    margin-top:60px;
+  }
+}
+
+h2 {
+  font-size:16px;
+  text-transform: uppercase;
+  margin-bottom:3px;
+}
+
+h3 {
+  font-family:$font-main;
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, li {
+  a {
+    color: $color-blue;
+    border-bottom: 1px solid #d1dde8;
+    padding-bottom:1px;
+  }
+}
+
+input[type='text'], input[type='password'], textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  outline: none;
+  border-radius: 2px; }
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border-color: #8dabd4; }
+
+input[type='submit'], input[type='button'], button, .button {
+  font: 12px $font-main;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid #adadad;
+  padding: 3px 5px;
+  background: #ffffff;
+  width:auto !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #f3f3f3));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, #f3f3f3 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, #f3f3f3 100%);
+  /* IE10+ */
+  background: linear-gradient(top, white 0%, #f3f3f3 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );
+  /* IE6-9 */ }
+
+input[type='submit']:hover, input[type='button']:hover, button:hover, .button:hover {
+  text-decoration: none;
+  background: -webkit-linear-gradient(top, white 0%, #f6f6f6 100%);
+  /* Chrome10+,Safari5.1+ */
+  border-color: #ccc;
+  color: #777; 
+}
+
+input[type='submit']:hover img, input[type='button']:hover img, button:hover img, .button:hover img {
+  opacity: 0.5;
+}
+
+#header {
+  top:0;
+  position:fixed;
+  background:rgba(255,255,255,0.98);
+  height:70px;
+  width:100%;
+  box-shadow:0px 0px 5px rgba(0,0,0,0.25);
+  z-index:10;
+  
+  img {
+    margin-top:13px;
+    margin-left:30px;
+    width:45px;
+    height:45px;
+  }
+  
+  h1 {
+    font-weight:normal;
+    font-family:$font-brand;
+    font-size:36px;
+    display:inline-block;
+    text-transform:lowercase;
+    margin-left:15px;
+    vertical-align:top;
+    margin-top:10px;
+
+    .version {
+      font-weight:500;
+      font-size:11px;
+      color:$color-gray;
+    }
+  }
+  
+  > a {
+    text-decoration:none;
+    color:$color-black;
+  }
+  
+  iframe {
+    margin-left:40px;
+    vertical-align:top;
+    margin-top:30px;
+  }
+}
+
+#navigation {
+  position:absolute;
+  right:30px;
+  display:inline-block;
+  top:28px;
+  
+  li {
+    display:inline-block;
+    margin-left:30px;
+    height:20px;
+    
+    &.active {
+      background:url('/images/guide-nav-active.png') no-repeat bottom;
+      
+      a {
+        font-style:italic;
+      }
+    }  
+    
+    a {
+      color:$color-black;
+      font-family:$font-main;
+      font-weight:normal;
+      text-transform:uppercase;
+      border:0;  
+      
+      &:hover {
+        color:$color-red;
+      }
+    }  
+  }
+}
+
+#footer {
+  text-align: center;
+  margin:80px 0 40px;
+  text-transform: uppercase;
+  color:#aaa;
+  font-size:11px;
+  left:70px;
+  right:70px;
+  padding-bottom:50px;
+  width:700px;
+  margin:auto;
+  margin-top:150px;
+
+  a {
+    font-weight:normal;
+    color:$color-gray;
+    border-color:lighten($color-gray, 30%);
+  }
+}
