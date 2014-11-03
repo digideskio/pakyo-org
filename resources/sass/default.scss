@@ -425,6 +425,10 @@ code {
     color:$color-black;
     padding:10px 20px;
 
+    i {
+      padding-right:5px;
+    }
+
     &:hover {
       border-color:$color-red;
     }
