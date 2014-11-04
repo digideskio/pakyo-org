@@ -254,55 +254,8 @@ code {
 }
 
 .article {
-  font-size:14px;
   width:650px;
   margin:auto;
-
-  .title {
-    font-size:46px;
-    font-family:$font-brand;
-    text-align:center;
-    color:#ed1f24;
-    margin-bottom:10px;
-    margin-top:20px;
-    border-bottom: none;
-  }
-
-  h1.divide {
-    padding-top:100px;
-    margin-top:0;
-  }
-
-  h2 {
-    font-size:15px;
-    text-transform:uppercase;
-    margin-top:20px;
-    margin-bottom:10px;
-  }
-
-  code {
-    font-size:14px;
-    margin: 20px 0;
-  }
-
-  p {
-    line-height:1.7em;
-
-    code {
-      padding:0;
-      border:0;
-      border-bottom:1px dashed $color-gray;
-    }
-  }
-
-  ul, ol {
-    line-height:1.5em;
-
-    li {
-      margin-bottom:15px;
-      font-size:14px;
-    }
-  }
 }
 
 .features {
