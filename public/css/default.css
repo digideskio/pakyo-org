@@ -31,6 +31,15 @@ h3 {
 
 a {
   text-decoration: none; }
+  a.box {
+    border: 1px solid #ff9999;
+    color: #333333;
+    padding: 10px 20px;
+    background: none; }
+    a.box i {
+      padding-right: 5px; }
+    a.box:hover {
+      border-color: red; }
 
 p a, li a {
   color: #19558d;
@@ -154,6 +163,39 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     font-weight: normal;
     color: #999999;
     border-color: #e6e6e6; }
+
+.article {
+  font-size: 14px; }
+  .article .title {
+    font-size: 46px;
+    font-family: "futura-pt", sans-serif;
+    text-align: center;
+    color: #ed1f24;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: none; }
+  .article h1.divide {
+    padding-top: 100px;
+    margin-top: 0; }
+  .article h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .article code {
+    font-size: 14px;
+    margin: 20px 0; }
+  .article p {
+    line-height: 1.7em; }
+    .article p code {
+      padding: 0;
+      border: 0;
+      border-bottom: 1px dashed #999999; }
+  .article ul, .article ol {
+    line-height: 1.5em; }
+    .article ul li, .article ol li {
+      margin-bottom: 15px;
+      font-size: 14px; }
 
 #main {
   width: 900px;
@@ -318,67 +360,32 @@ code {
   display: block;
   margin-top: 60px; }
 
-#start {
-  margin-top: 60px; }
-  #start h1 {
-    border-bottom: 1px solid #555555; }
-  #start h2 {
-    margin: 30px 0 10px; }
-  #start p {
-    padding-left: 15px; }
-  #start > ul {
-    margin: 0;
-    list-style-type: none; }
-    #start > ul > li {
-      font-size: 13px;
-      margin-bottom: 30px; }
-      #start > ul > li ul {
-        margin-left: 40px;
-        list-style-type: disc; }
-        #start > ul > li ul li {
-          margin-bottom: 10px; }
-  #start code {
-    border: none;
-    padding-left: 15px; }
+#start h1 {
+  border-bottom: 1px solid #555555; }
+#start h2 {
+  margin: 0px 0 10px; }
+#start > ul {
+  margin: 0;
+  list-style-type: none; }
+  #start > ul > li {
+    font-size: 13px;
+    margin-bottom: 30px; }
+    #start > ul > li ul {
+      margin-left: 40px;
+      list-style-type: disc; }
+      #start > ul > li ul li {
+        margin-bottom: 10px; }
+#start code {
+  border: none;
+  padding-left: 15px; }
 
 .intro {
   font-size: 16px;
   margin-bottom: 40px; }
 
 .article {
-  font-size: 14px;
   width: 650px;
   margin: auto; }
-  .article .title {
-    font-size: 46px;
-    font-family: "futura-pt", sans-serif;
-    text-align: center;
-    color: #ed1f24;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    border-bottom: none; }
-  .article h1.divide {
-    padding-top: 100px;
-    margin-top: 0; }
-  .article h2 {
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 10px; }
-  .article code {
-    font-size: 14px;
-    margin: 20px 0; }
-  .article p {
-    line-height: 1.7em; }
-    .article p code {
-      padding: 0;
-      border: 0;
-      border-bottom: 1px dashed #999999; }
-  .article ul, .article ol {
-    line-height: 1.5em; }
-    .article ul li, .article ol li {
-      margin-bottom: 15px;
-      font-size: 14px; }
 
 .features {
   margin-top: 60px;
@@ -450,11 +457,10 @@ code {
 
 .blog-links {
   margin-bottom: 80px; }
-  .blog-links a {
-    border: 1px solid #ff9999;
-    color: #333333;
-    padding: 10px 20px; }
-    .blog-links a i {
-      padding-right: 5px; }
-    .blog-links a:hover {
-      border-color: red; }
+  .blog-links a i {
+    padding-right: 5px; }
+
+.build-the-web .col {
+  width: 430px; }
+  .build-the-web .col:last-child {
+    margin-left: 40px; }

@@ -207,18 +207,12 @@ code {
 }
 
 #start {
-  margin-top:60px;
-
   h1 {
     border-bottom: 1px solid #555
   }
 
   h2 {
-    margin:30px 0 10px;
-  }
-
-  p {
-    padding-left:15px;
+    margin:0px 0 10px;
   }
 
   > ul {
@@ -374,16 +368,18 @@ code {
   margin-bottom:80px;
 
   a {
-    border: 1px solid lighten($color-red, 30%);
-    color:$color-black;
-    padding:10px 20px;
-
     i {
       padding-right:5px;
     }
+  }
+}
 
-    &:hover {
-      border-color:$color-red;
+.build-the-web {
+  .col {
+    width: 430px;
+
+    &:last-child {
+      margin-left: 40px;
     }
   }
 }
