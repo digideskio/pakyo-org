@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-ruby "1.9.3"
+ruby "2.1.2"
 
 gem "pakyow", git: 'https://github.com/metabahn/pakyow.git'
 gem "thin", :platforms => :mri
