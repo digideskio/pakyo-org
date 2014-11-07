@@ -63,7 +63,7 @@ Pakyow::App.routes do
       partial(:post).scope(:post).with do
         bind(post)
         prop(:permalink).remove
-        prop(:show_link).attributes.href = nil
+        prop(:show_link).attrs.href = nil
       end
     else
       handle 404
