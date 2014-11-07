@@ -286,7 +286,7 @@ look like this:
     ruby:
     source "http://rubygems.org"
 
-    gem "pakyow", "0.8"
+    gem "pakyow", "0.9.0"
 
     # application server
     gem "puma"
@@ -324,6 +324,8 @@ The entire file should look like this:
 
     Pakyow::App.define do
       configure :global do
+        app.name = "Pakyow Warmup"
+
         app.consumer_key        = "YOUR_CONSUMER_KEY"
         app.consumer_secret     = "YOUR_CONSUMER_SECRET"
         app.access_token        = "YOUR_ACCESS_TOKEN"
@@ -339,11 +341,11 @@ The entire file should look like this:
         app.ignore_routes = true
       end
 
-      configure :production do
-        # suggested production configuration
-        app.auto_reload = false
-        app.errors_in_browser = false
+      configure :staging do
+        # put your staging config here
+      end
 
+      configure :production do
         # put your production config here
       end
     end
@@ -458,7 +460,7 @@ define the following binding for our `avatar` prop:
     ruby:
     scope :tweet do
       binding :avatar do
-        { src: bindable.user[:profile_image_url] }
+        { src: bindable.user.profile_image_url }
       end
     end
 
@@ -473,7 +475,7 @@ presented:
 
     ruby:
     binding :user do
-      bindable.user[:name]
+      bindable.user.name
     end
 
 Unlike the `avatar` binding which mapped data to the `src` attribute,
@@ -487,7 +489,7 @@ the following binding for the `show` prop:
 
     ruby:
     binding :show do
-      { href: router.group(:tweet).path(:show, tweet_id: bindable[:id]) }
+      { href: router.group(:tweet).path(:show, tweet_id: bindable.id) }
     end
 
 This binding uses the router path helper to create a URI to the restful
@@ -510,7 +512,7 @@ work we must define one last binding:
 
     ruby:
     binding :twitter do
-      { href: "http://twitter.com/#{bindable.user[:screen_name]}/status/#{bindable[:id]}" }
+      { href: "http://twitter.com/#{bindable.user.screen_name}/status/#{bindable.id}" }
     end
 
 Reload again and you'll see the twitter link now works properly.
