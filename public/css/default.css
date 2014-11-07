@@ -23,6 +23,10 @@ h2 {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 3px; }
+  h2.divide {
+    border-bottom: 2px solid #999999;
+    padding-bottom: 5px;
+    margin-top: 60px; }
 
 h3 {
   font-family: "museo-sans", sans-serif;
@@ -178,8 +182,15 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     padding-top: 100px;
     margin-top: 0; }
   .article h2 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600; }
+  .article h3 {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: normal;
     margin-top: 20px;
     margin-bottom: 10px; }
   .article code {

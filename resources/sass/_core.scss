@@ -39,6 +39,12 @@ h2 {
   font-size:16px;
   text-transform: uppercase;
   margin-bottom:3px;
+
+  &.divide {
+    border-bottom:2px solid $color-gray;
+    padding-bottom:5px;
+    margin-top:60px;
+  }
 }
 
 h3 {
@@ -237,8 +243,17 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   }
 
   h2 {
-    font-size:15px;
+    font-size:20px;
     text-transform:uppercase;
+    margin-top:20px;
+    margin-bottom:10px;
+    font-weight:600;
+  }
+
+  h3 {
+    text-transform:none;
+    font-size:18px;
+    font-weight:normal;
     margin-top:20px;
     margin-bottom:10px;
   }
