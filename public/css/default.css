@@ -123,9 +123,9 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
       color: #999999; }
   #header > a {
     text-decoration: none;
-    color: #333333; }
+    color: #333333;
+    margin-right: 40px; }
   #header iframe {
-    margin-left: 40px;
     vertical-align: top;
     margin-top: 30px; }
 
@@ -475,3 +475,25 @@ code {
   width: 430px; }
   .build-the-web .col:last-child {
     margin-left: 40px; }
+
+#mc_embed_signup {
+  margin: 60px 0; }
+  #mc_embed_signup p {
+    font-weight: 600; }
+  #mc_embed_signup .button {
+    border-radius: 0;
+    background: red;
+    color: #fff;
+    border-color: red;
+    margin-left: -5px;
+    text-transform: uppercase; }
+  #mc_embed_signup input {
+    box-sizing: border-box;
+    border: 1px solid #999999;
+    outline: 0;
+    line-height: normal;
+    padding: 0px 20px;
+    font-size: 13px;
+    width: 250px;
+    vertical-align: middle;
+    height: 40px; }

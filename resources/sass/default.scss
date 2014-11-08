@@ -383,3 +383,32 @@ code {
     }
   }
 }
+
+#mc_embed_signup {
+  margin: 60px 0;
+
+  p {
+    font-weight:600;
+  }
+
+  .button {
+    border-radius:0;
+    background:$color-red;
+    color:#fff;
+    border-color: $color-red;
+    margin-left:-5px;
+    text-transform: uppercase;
+  }
+
+  input {
+    box-sizing:border-box;
+    border:1px solid $color-gray;
+    outline:0;
+    line-height: normal;
+    padding:0px 20px;
+    font-size: 13px;
+    width: 250px;
+    vertical-align: middle;
+    height:40px;
+  }
+}
