@@ -70,6 +70,10 @@ Pakyow::App.routes do
     end
   end
 
+  get 'community' do
+    redirect '/get-involved', 301
+  end
+
   get 'blog/archive' do
     months = {
       '1' => 'January',
