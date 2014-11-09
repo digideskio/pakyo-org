@@ -1,5 +1,4 @@
 source "http://rubygems.org"
-ruby "2.1.2"
 
 gem "pakyow", git: 'https://github.com/metabahn/pakyow.git'
 gem "thin", :platforms => :mri
@@ -10,5 +9,7 @@ gem "pygments.rb"
 gem "builder", "~>2.0"
 
 group :development do
-  gem "capistrano", "2.15.5"
+  gem 'capistrano'
+  gem "capistrano-rbenv"
+  gem "capistrano-bundler"
 end
