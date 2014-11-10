@@ -11,6 +11,10 @@ Sass::Plugin.options[:template_location] = './resources/sass'
 Sass::Plugin.options[:css_location] = './public/css'
 
 Pakyow::App.define do
+  after :load do
+    BlogPost.load
+  end
+
   config.app.default_environment = :development
 
   configure(:development) do

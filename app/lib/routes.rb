@@ -56,7 +56,7 @@ Pakyow::App.routes do
   get /blog\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-z0-9-]*/ do
     post = BlogPost.find(request.path_parts)
 
-    if post.found
+    if post
       presenter.path = 'blog/show'
       view.title = "Pakyow &#8250; #{post.title}"
 

@@ -2,8 +2,13 @@ class BlogPost
   @@matcher = /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
 
   class << self
-    # returns all blog posts
+    # returns the loaded posts
     def all
+      @posts || []
+    end
+
+    # loads the blog posts
+    def load
       @posts = []
 
       Dir.glob('posts/*.md').each do |path|
@@ -12,12 +17,12 @@ class BlogPost
         @posts << post
       end
 
-      return @posts.sort {|x,y| y.published_at <=> x.published_at }
+      @posts.sort! {|x,y| y.published_at <=> x.published_at }
     end
 
     # finds a post by url
     def find(url)
-      BlogPost.new("posts/#{url[1]}-#{url[2]}-#{url[3]}-#{url[4]}.md")
+      @posts.find { |post| post.permalink == "/blog/#{url[1]}/#{url[2]}/#{url[3]}/#{url[4]}" }
     end
   end
 
