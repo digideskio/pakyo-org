@@ -20,7 +20,7 @@ Pakyow::App.routes do
         subject subject
         body    body.join("\n")
       end
-      
+
       mail.delivery_method :sendmail
       mail.deliver
     end
@@ -119,8 +119,8 @@ Pakyow::App.routes do
           channel.item do |item|
             item.title post.title
             item.description RDiscount.new(post.body).to_html
-            item.link File.join("http://pakyow.com/blog/", post.permalink)
-            item.guid File.join("http://pakyow.com/blog/", post.permalink), :isPermaLink => true
+            item.link File.join("http://pakyow.com", post.permalink)
+            item.guid File.join("http://pakyow.com", post.permalink), :isPermaLink => true
             item.pubDate post.published_at.strftime(rfc882)
             item.source "http://pakyow.com/blog/"
           end
@@ -128,6 +128,6 @@ Pakyow::App.routes do
       end
     end
 
-    send(xml.to_s + "\r\n", 'application/rss+xml')
+    send(xml.to_s + "\r\n", 'text/xml')
   end
 end
