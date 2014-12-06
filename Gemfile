@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "pakyow", git: 'https://github.com/metabahn/pakyow.git'
+gem "pakyow", "0.9.1"
 gem "thin", :platforms => :mri
 gem "sass"
 gem "rake"
