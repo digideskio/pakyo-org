@@ -16,7 +16,7 @@ Installation is complete!
 
 <h1 class="divide" id="reference">2. Reference</h1>
 
-If you get stuck at any point reference the warmup app on [GitHub](https://github.com/metabahn/pakyow-warmup). And if
+If you get stuck at any point reference the warmup app on [GitHub](https://github.com/pakyow/pakyow-warmup). And if
 you're still stuck, by all means ask for help on the [mailing list](http://groups.google.com/group/pakyow),
 or on [Twitter](http://twitter.com/pakyow)!
 
@@ -85,7 +85,7 @@ template to create the final view sent back in the response.
 You might notice the div that contains a `container-1` class. This
 class is defined in the pakyow-css library included with every generated
 app. Explaining the library is beyond the scope of this warmup, but you
-can read more <a href="http://github.com/metabahn/pakyow-css">here</a>.
+can read more <a href="http://github.com/pakyow/pakyow-css">here</a>.
 <br>
 <br>
 There are several uses of pakyow-css throughout this warmup. Anytime
