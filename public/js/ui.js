@@ -4,7 +4,7 @@
 //    single thing: bind the new data
 //    many things: bind the new data (for existing), create for new
 //  Perhaps an `update` method is necessary here. It would first search the view for nodes with a
-//  matching `data-id`. Then it calls `apply`. When applying existing data, the existing view is 
+//  matching `data-id`. Then it calls `apply`. When applying existing data, the existing view is
 //  used and the new data is bound to it. This *should* use the same node so events and components
 //  are still registered to it.
 //TODO handle destructed views
@@ -40,7 +40,7 @@ var pui;
     if(typeof port === 'undefined') port = 8080;
 
     pui.ws = new WebSocket("ws://" + host + ":" + port + "/");
-    
+
     pui.ws.onopen    = pui.ws_open;
     pui.ws.onclose   = pui.ws_close;
     pui.ws.onmessage = pui.ws_message;
@@ -125,20 +125,20 @@ var pui;
   pui.instructContext = function(context, instructions, channel) {
     for(var i = 0; i < instructions.length; i++) {
       var instruction = instructions[i];
-      
+
       if(context instanceof pui_ComponentCollection) {
         // we know this is a ComponentCollection, so use handle to call on each component
         context.handle(instruction[0], instruction[1]);
       } else {
         // handle without components
         var ret = context[instruction[0]].call(context, instruction[1]);
-      
+
         if(instruction[2] instanceof Array) { // we have instructions to invoke on the new context
           pui.instructContext(ret, instruction[2]);
-        } else if(ret) { // no instructions, but we do have a return value; set it as the new context 
+        } else if(ret) { // no instructions, but we do have a return value; set it as the new context
                          // since the result is the current context w/transformations applied
           context = ret;
-        } 
+        }
       }
     }
 
@@ -151,7 +151,7 @@ var pui;
         // console.log(doc.doc)
         docs.push(doc);
       }
-      pui.subscriptions[channel] = [docs];  
+      pui.subscriptions[channel] = [docs];
     }
   };
 
@@ -397,7 +397,7 @@ var pui;
     //     //   aren't replaced
     //     this.doc.doc.parentNode.appendChild(doc.doc);
     //   }
-      
+
     //   collection.add(new pui_View(doc));
     // }
 
@@ -436,7 +436,7 @@ var pui;
       var props = [];
       o.breadth_first(function() {
         var so = this;
-        
+
         // don't go into deeper scopes
         if(o.doc != so.doc && so.doc.getAttribute('data-scope')) return;
 
@@ -862,7 +862,7 @@ var pui;
     pui.view  = new pui_View(pui.doc);
 
     // connect
-    pui.ws_connect();
+    // pui.ws_connect();
 
     // componentize
     pui.componentize();
