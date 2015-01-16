@@ -1,5 +1,16 @@
 @import "core";
 
+.gitter-chat {
+  position: absolute;
+  top: 30px;
+
+  img {
+    height: 18px !important;
+    width: auto !important;
+    margin-top: 0 !important;
+  }
+}
+
 #main {
   width:900px;
   margin:auto;

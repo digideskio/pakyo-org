@@ -208,6 +208,14 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
       margin-bottom: 15px;
       font-size: 14px; }
 
+.gitter-chat {
+  position: absolute;
+  top: 30px; }
+  .gitter-chat img {
+    height: 18px !important;
+    width: auto !important;
+    margin-top: 0 !important; }
+
 #main {
   width: 900px;
   margin: auto;
