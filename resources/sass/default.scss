@@ -423,3 +423,23 @@ code {
     height:40px;
   }
 }
+
+.notice {
+  position: fixed;
+  top: 70px;
+  left:0;
+  right:0;
+  background:#fcf8e3;
+  border-bottom: 1px solid #faebcc;
+  text-align: center;
+  height: 30px;
+
+  p {
+    font-size:12px;
+    line-height: 30px;
+  }
+
+  strong {
+    text-transform: uppercase;
+  }
+}
