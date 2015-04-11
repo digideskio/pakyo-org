@@ -273,7 +273,7 @@ prototype intact.
   prototype environment: pakyow server prototype
 </p>
 
-<h2 id="integration">Twitter Intergration</h2>
+<h2 id="integration">Twitter Integration</h2>
 
 We'll be interacting with Twitter through their developer API. They provide a
 Ruby library to make this easier. There are a few steps to get
