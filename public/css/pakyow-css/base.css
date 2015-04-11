@@ -5,7 +5,7 @@ body {
   font:12px "Helvetica Neue", Helvetica, sans-serif;
 }
 
-code {
+code, .highlight {
   font:11px Menlo, monospace;
 }
 

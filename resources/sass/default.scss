@@ -14,7 +14,7 @@
 #main {
   width:900px;
   margin:auto;
-  margin-top:150px;
+  margin-top:180px;
 }
 
 hr {
@@ -138,8 +138,8 @@ hr {
   font-weight:500;
 }
 
-code {
-  font-family:source-code-pro, Helvetica, sans-serif;
+code, .highlight {
+  font-family: "source-code-pro", Helvetica, sans-serif;
 }
 
 .ex {
@@ -245,7 +245,7 @@ code {
     }
   }
 
-  code {
+  code, .highlight {
     border:none;
     padding-left:15px;
   }

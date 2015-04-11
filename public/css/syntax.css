@@ -1,4 +1,4 @@
-code, div.code {
+code, div.code, .highlight {
   font-family:monospace;
   font-size:12px;
   display:block;
@@ -18,14 +18,6 @@ p code {
 
 div.code {
   margin-top:-10px;
-}
-
-code.console:before {
-  content: '$ ';
-}
-
-code.console .highlight, code.console pre {
-  display:inline;
 }
 
 .highlight  { background: #ffffff; }
