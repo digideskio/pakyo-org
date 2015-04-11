@@ -523,3 +523,12 @@ code, .highlight {
 
 #mce-responses .response {
   display: none; }
+
+.gplus {
+  opacity: 0;
+  display: none; }
+
+blockquote {
+  border-left: 3px solid #eee;
+  padding-left: 10px;
+  color: #777; }
