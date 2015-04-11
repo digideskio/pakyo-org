@@ -130,4 +130,18 @@ Pakyow::App.routes do
 
     send(xml.to_s + "\r\n", 'text/xml')
   end
+
+  # to fix google crawl errors
+
+  get '/2012/02/16/announcing_zero_eight' do
+    redirect '/blog/2012/02/16/announcing_zero_eight', 301
+  end
+
+  get '/2011/11/21/zero_seven' do
+    redirect '/blog/2011/11/21/zero_seven', 301
+  end
+
+  get '/2013/02/14/zero_eight_rc1_release' do
+    redirect '/blog/2013/02/14/zero_eight_rc1_release', 301
+  end
 end
