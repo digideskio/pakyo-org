@@ -520,3 +520,6 @@ code, .highlight {
     line-height: 30px; }
   .notice strong {
     text-transform: uppercase; }
+
+#mce-responses .response {
+  display: none; }
