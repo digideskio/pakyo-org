@@ -1,6 +1,6 @@
 ---
 title: "Connecting a Pakyow app to Postgres with Sequel."
-time: 5:35pm CST
+time: 4:35pm CST
 ---
 
 Yesterday [@bryanp](http://twitter.com/bryanp) published an article on connecting a Pakyow app to Postgres using Sequel:
