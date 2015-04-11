@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>http://pakyow.com/</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/warmup</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<!-- docs -->
+<url>
+  <loc>http://pakyow.com/docs</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/get-involved</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/getting-started</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/routing</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/helpers</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/view-composition</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/view-management</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/data-binding</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/bindings</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/working-with-forms</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/view-processors</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/mailer</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/data</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/configuration</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/handling-failure</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/tools</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/contributing</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/view_management</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/getting_started</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/view_composition</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/docs/data_binding</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-04-10T14:38:54Z</lastmod>
+</url>
+<!-- blog -->
+<url>
+  <loc>http://pakyow.com/blog/archive</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2015-03-24T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2015/03/24/ui-intro</loc>
+  <lastmod>2015-03-24T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2015/01/07/recursive-data-binding</loc>
+  <lastmod>2015-01-07T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2015/01/05/zero-nine-release-party</loc>
+  <lastmod>2015-01-05T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2014/12/06/zero-nine-one</loc>
+  <lastmod>2014-12-06T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2014/11/17/pakyow-fail</loc>
+  <lastmod>2014-11-17T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2014/11/09/zero_nine</loc>
+  <lastmod>2014-11-09T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2014/03/04/zero_eight</loc>
+  <lastmod>2014-03-04T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2013/02/14/zero_eight_rc1_release</loc>
+  <lastmod>2013-02-14T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2012/02/29/zero_seven_two</loc>
+  <lastmod>2012-02-29T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2012/02/16/announcing_zero_eight</loc>
+  <lastmod>2012-02-16T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2012/01/08/zero_seven_one</loc>
+  <lastmod>2012-01-08T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.com/blog/2011/11/21/zero_seven</loc>
+  <lastmod>2011-11-21T00:00:00Z</lastmod>
+</url>
+</urlset>
