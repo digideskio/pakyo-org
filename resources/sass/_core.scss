@@ -12,8 +12,13 @@ $color-blue: #19558d;
 html, body, #main {
   font-family:$font-main;
   font-size:14px;
+  line-height: 1.4em;
   color:$color-black;
   -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -181,6 +186,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     display:inline-block;
     margin-left:30px;
     height:20px;
+    font-size: 12px;
     
     &.active {
       background:url('/images/guide-nav-active.png') no-repeat bottom;
@@ -209,7 +215,6 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   margin:80px 0 40px;
   text-transform: uppercase;
   color:#aaa;
-  font-size:11px;
   left:70px;
   right:70px;
   padding-bottom:50px;
@@ -221,6 +226,11 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     font-weight:normal;
     color:$color-gray;
     border-color:lighten($color-gray, 30%);
+  }
+
+  p {
+    font-size:11px;
+    line-height: 22px;
   }
 }
 

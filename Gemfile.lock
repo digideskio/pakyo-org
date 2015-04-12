@@ -62,7 +62,7 @@ GEM
     rack (1.5.2)
     rake (10.0.3)
     rdiscount (2.0.7.1)
-    sass (3.2.1)
+    sass (3.4.9)
     sshkit (1.5.1)
       colorize
       net-scp (>= 1.1.2)

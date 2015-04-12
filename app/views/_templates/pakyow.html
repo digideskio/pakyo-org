@@ -9,7 +9,8 @@
 
   <meta name="description" content="Pakyow is an open-source Ruby framework for building the modern web.">
 
-  <link rel="stylesheet" type="text/css" media="all" href="/css/pakyow-css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/pakyow-css/reset.css">
+  <link rel="stylesheet" type="text/css" media="all" href="/css/pakyow-css/structure.css">
   <link rel="stylesheet" type="text/css" media="all" href="/css/syntax.css">
   <link rel="stylesheet" type="text/css" media="all" href="/css/default.css">
 
@@ -19,29 +20,33 @@
   <script type="text/javascript" src="/js/pui.contributor-blocks.js"></script>
 
   <link rel="stylesheet" type="text/css" media="all" href="/css/pui.contributor-blocks.css">
-  
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
   <script src="//use.typekit.net/dol5ibr.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
 </head>
 
-<body>
+<body ontouchstart="">
   <div id="header">
     <a href="/">
       <img src="/images/pakyow-small.png" alt="Pakyow">
 
-      <h1>
+      <h1 class="res-hide-s res-hide-m">
         Pakyow
         <span class="version">v0.9</span>
       </h1>
     </a>
 
-    <iframe src="http://ghbtns.com/github-btn.html?user=pakyow&repo=pakyow&type=watch&count=true" width="110" height="20"></iframe>
+    <iframe class="res-hide-s res-hide-m" src="http://ghbtns.com/github-btn.html?user=pakyow&repo=pakyow&type=watch&count=true" width="110" height="20"></iframe>
 
-    <a class="twitter-follow-button"
+    <a class="twitter-follow-button res-hide-s res-hide-m"
       href="https://twitter.com/pakyow"
       data-show-count="false"
       data-lang="en">
@@ -58,7 +63,7 @@
     }(document, "script", "twitter-wjs"));
     </script>
 
-    <a href="https://gitter.im/pakyow/chat" class="gitter-chat">
+    <a href="https://gitter.im/pakyow/chat" class="gitter-chat res-hide-s res-hide-m">
       <img src="http://badges.gitter.im/pakyow.svg" alt="Pakyow">
     </a>
 
