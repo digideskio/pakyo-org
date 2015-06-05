@@ -162,7 +162,7 @@ directory with the following content:
     </h1>
 
     <p>
-      Just a fun little warmup using <a href="http://pakyow.com">Pakyow</a>.
+      Just a fun little warmup using <a href="http://pakyow.org">Pakyow</a>.
     </p>
 
 Next, include the partial into the index page by adding this HTML
