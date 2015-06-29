@@ -3,7 +3,7 @@
 //TODO consider Open Sans
 $font-main: "museo-sans", sans-serif;
 $font-header: "proxima-nova", sans-serif;
-$font-brand: "futura-pt", sans-serif;
+$font-brand: 'Ideal Sans A', 'Ideal Sans B', sans-serif;
 
 $color-black: #333;
 $color-red: #e54d42;
@@ -154,9 +154,9 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     font-size:28px;
     display:inline-block;
     text-transform:lowercase;
-    margin-left:15px;
+    margin-left:10px;
     vertical-align:top;
-    margin-top:10px;
+    margin-top:8px;
     line-height: 28px;
 
     .version {
@@ -182,7 +182,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   position:absolute;
   right:10px;
   display:inline-block;
-  top:18px;
+  top:15px;
   
   li {
     display:inline-block;

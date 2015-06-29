@@ -114,13 +114,13 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     height: 30px; }
   #header h1 {
     font-weight: normal;
-    font-family: "futura-pt", sans-serif;
+    font-family: "Ideal Sans A", "Ideal Sans B", sans-serif;
     font-size: 28px;
     display: inline-block;
     text-transform: lowercase;
-    margin-left: 15px;
+    margin-left: 10px;
     vertical-align: top;
-    margin-top: 10px;
+    margin-top: 8px;
     line-height: 28px; }
     #header h1 .version {
       font-weight: 500;
@@ -138,7 +138,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   position: absolute;
   right: 10px;
   display: inline-block;
-  top: 18px; }
+  top: 15px; }
   #navigation li {
     display: inline-block;
     margin-left: 30px;
@@ -179,7 +179,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   font-size: 14px; }
   .article .title {
     font-size: 46px;
-    font-family: "futura-pt", sans-serif;
+    font-family: "Ideal Sans A", "Ideal Sans B", sans-serif;
     text-align: center;
     color: #ed1f24;
     margin-bottom: 10px;
@@ -242,7 +242,7 @@ hr {
   padding: 10px 0;
   background: #FE0000;
   color: #930000;
-  font-family: "futura-pt", sans-serif;
+  font-family: "Ideal Sans A", "Ideal Sans B", sans-serif;
   font-size: 36px;
   border-bottom: 1px solid #c40000; }
   #middle h2 {
@@ -305,7 +305,7 @@ hr {
   margin: -3px -5px 10px; }
 
 #toc li a {
-  font-family: "futura-pt", sans-serif;
+  font-family: "Ideal Sans A", "Ideal Sans B", sans-serif;
   font-size: 14px;
   font-weight: normal; }
 
@@ -325,11 +325,11 @@ hr {
 
 .big {
   color: #fff;
-  width: 700px;
+  width: 800px;
   margin: auto;
   text-align: center;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 600; }
 
 code, .highlight {
@@ -378,7 +378,7 @@ code, .highlight {
       margin-top: 3px;
       font-size: 11px;
       color: #999;
-      font-family: "futura-pt", sans-serif; }
+      font-family: "Ideal Sans A", "Ideal Sans B", sans-serif; }
 
 .moving {
   font-size: 15px;
