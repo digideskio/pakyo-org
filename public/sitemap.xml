@@ -7,123 +7,329 @@
 <url>
   <loc>http://pakyow.org/</loc>
   <changefreq>weekly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
-</url>
-<url>
-  <loc>http://pakyow.org/warmup</loc>
-  <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <!-- docs -->
 <url>
   <loc>http://pakyow.org/docs</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/get-involved</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/blog</loc>
   <changefreq>weekly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/getting-started</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/getting-started/installation</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/getting-started/generation</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/getting-started/running</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+
+<url>
+  <loc>http://pakyow.org/docs/warmup/start</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/view</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/backend</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/deployment</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/conclusion</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/routing</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/named-functions</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/hooks</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/groups</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/namespaces</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/templates</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/nested-routes</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/restful</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/uri-generation</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/error-handling</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/route-sets</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/routing/mixins</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/helpers</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/params</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/sessions-cookies</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/redirecting</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/halting</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/sending-data</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/request-response</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/helpers/logging</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/view-composition</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-composition/templates</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-composition/pages</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-composition/partials</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/view-management</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-management/composing</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-management/traversing</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-management/modifying</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-management/attributes</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/view-management/multiple-stores</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/data-binding</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/data-binding/binding-api</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/data-binding/data-sets</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/data-binding/nested</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/bindings</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/bindings/modifying-values</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/bindings/view-access</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/bindings/binding-sets</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/working-with-forms</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/view-processors</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/mailer</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/data</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/configuration</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/handling-failure</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/handling-failure/email</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/tools</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/contributing</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/view_management</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/getting_started</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/view_composition</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/data_binding</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-04-10T14:38:54Z</lastmod>
+  <lastmod>2015-07-01T14:38:54Z</lastmod>
 </url>
 <!-- blog -->
 <url>
