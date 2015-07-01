@@ -62,9 +62,8 @@ a {
   text-decoration: none;
 
   &.box {
-    border: 1px solid $color-red;
     padding:10px 20px;
-    background:$color-red;
+    background:$color-black;
     color:#fff;
 
     i {
@@ -72,16 +71,15 @@ a {
     }
 
     &:hover {
-      color:$color-black;
-      background:none;
+      background: lighten($color-black, 10%);
     }
   }
 }
 
 p, li {
   a {
-    color: $color-blue;
-    border-bottom: 1px solid #d1dde8;
+    color: $color-red;
+    border-bottom: 1px solid lighten($color-red, 35%);
     padding-bottom:1px;
   }
 }

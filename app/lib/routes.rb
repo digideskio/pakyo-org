@@ -49,8 +49,8 @@ Pakyow::App.routes do
 
   get 'blog' do
     posts = BlogPost.all
-    partial(:post).scope(:post).bind(posts[0])
-    partial(:archive).scope(:post).apply(posts[1..-1])
+    partial(:list).scope(:post).apply(posts[0..5])
+    # partial(:archive).scope(:post).apply(posts[1..-1])
   end
 
   get /blog\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-z0-9-]*/ do
