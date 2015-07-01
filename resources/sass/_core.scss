@@ -189,10 +189,9 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     font-size: 12px;
     
     &.active {
-      background:url('/images/guide-nav-active.png') no-repeat bottom;
-      
       a {
-        font-style:italic;
+        font-weight:bold;
+        color: $color-red;
       }
     }  
     
