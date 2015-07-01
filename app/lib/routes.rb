@@ -50,7 +50,7 @@ Pakyow::App.routes do
   get 'blog' do
     posts = BlogPost.all
     partial(:list).scope(:post).apply(posts[0..5])
-    # partial(:archive).scope(:post).apply(posts[1..-1])
+    set_active_nav(:blog)
   end
 
   get /blog\/[0-9]{4}\/[0-9]{2}\/[0-9]{2}\/[a-z0-9-]*/ do
@@ -65,6 +65,8 @@ Pakyow::App.routes do
         prop(:permalink).remove
         prop(:show_link).attrs.href = nil
       end
+
+      set_active_nav(:blog)
     else
       handle 404
     end
@@ -96,6 +98,8 @@ Pakyow::App.routes do
       prop(:title).html = "#{months[m]} #{y}"
       scope(:post).apply(group[1])
     }
+
+    set_active_nav(:blog)
   end
 
   get 'blog/feed' do
@@ -129,6 +133,14 @@ Pakyow::App.routes do
     end
 
     send(xml.to_s + "\r\n", 'text/xml')
+  end
+
+  get 'warmup' do
+    set_active_nav(:warmup)
+  end
+
+  get 'get-involved' do
+    set_active_nav(:community)
   end
 
   # to fix google crawl errors

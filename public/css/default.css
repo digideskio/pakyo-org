@@ -143,10 +143,9 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
     margin-left: 30px;
     height: 20px;
     font-size: 12px; }
-    #navigation li.active {
-      background: url("/images/guide-nav-active.png") no-repeat bottom; }
-      #navigation li.active a {
-        font-style: italic; }
+    #navigation li.active a {
+      font-weight: bold;
+      color: #e54d42; }
     #navigation li a {
       color: #333;
       font-family: "museo-sans", sans-serif;
