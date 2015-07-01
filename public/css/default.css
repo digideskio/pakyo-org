@@ -40,19 +40,17 @@ h3 {
 a {
   text-decoration: none; }
   a.box {
-    border: 1px solid #e54d42;
     padding: 10px 20px;
-    background: #e54d42;
+    background: #333;
     color: #fff; }
     a.box i {
       padding-right: 5px; }
     a.box:hover {
-      color: #333;
-      background: none; }
+      background: #4d4d4d; }
 
 p a, li a {
-  color: #19558d;
-  border-bottom: 1px solid #d1dde8;
+  color: #e54d42;
+  border-bottom: 1px solid #fbe1df;
   padding-bottom: 1px; }
 
 input[type='text'], input[type='password'], textarea {
@@ -394,7 +392,7 @@ code, .highlight {
       margin-bottom: 15px;
       margin-top: 5px;
       line-height: 35px;
-      border: 1px solid #fff; }
+      border: 2px solid #fff; }
 
 .moving {
   font-size: 15px;
@@ -461,6 +459,10 @@ code, .highlight {
     float: right; }
   .blog .post {
     margin-bottom: 120px; }
+    .blog .post.listed {
+      margin-bottom: 20px; }
+      .blog .post.listed a:hover {
+        text-decoration: underline; }
     .blog .post h1 {
       margin-bottom: 0;
       text-transform: none;
@@ -502,9 +504,16 @@ code, .highlight {
     margin-bottom: 20px; }
 
 .blog-links {
-  margin-bottom: 80px; }
+  margin-top: 80px; }
   .blog-links a i {
     padding-right: 5px; }
+  .blog-links .social {
+    float: right; }
+    .blog-links .social li {
+      float: right;
+      margin-left: 15px; }
+    .blog-links .social iframe {
+      display: block; }
 
 .build-the-web {
   margin-left: 0;
@@ -520,16 +529,14 @@ code, .highlight {
     font-weight: 600; }
   #mc_embed_signup .button {
     border-radius: 0;
-    background: #e54d42;
-    color: #fff;
-    border-color: #e54d42;
-    margin-left: -4px; }
+    background: #333;
+    margin-left: -4px;
+    color: #fff; }
     #mc_embed_signup .button:hover {
-      background: none;
-      color: #333; }
+      background: #4d4d4d; }
   #mc_embed_signup input {
     box-sizing: border-box;
-    border: 1px solid #e54d42;
+    border: 1px solid #333;
     outline: 0;
     line-height: normal;
     padding: 0px 20px;

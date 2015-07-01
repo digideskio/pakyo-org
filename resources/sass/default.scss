@@ -221,7 +221,7 @@ code, .highlight {
       margin-bottom: 15px;
       margin-top: 5px;
       line-height: 35px;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
     }
   }
 }
@@ -326,6 +326,14 @@ code, .highlight {
   .post {
     margin-bottom:120px;
 
+    &.listed {
+      margin-bottom: 20px;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
     h1 {
       margin-bottom:0;
       text-transform: none;
@@ -397,11 +405,24 @@ code, .highlight {
 }
 
 .blog-links {
-  margin-bottom:80px;
+  margin-top:80px;
 
   a {
     i {
       padding-right:5px;
+    }
+  }
+
+  .social {
+    float: right;
+
+    li {
+      float: right;
+      margin-left: 15px;
+    }
+
+    iframe {
+      display: block;
     }
   }
 }
@@ -428,20 +449,18 @@ code, .highlight {
 
   .button {
     border-radius:0;
-    background: $color-red;
-    color: #fff;
-    border-color: $color-red;
+    background:$color-black;
     margin-left:-4px;
+    color: #fff;
 
     &:hover {
-      background: none;
-      color: $color-black;
+      background: lighten($color-black, 10%);
     }
   }
 
   input {
     box-sizing:border-box;
-    border:1px solid $color-red;
+    border:1px solid $color-black;
     outline:0;
     line-height: normal;
     padding:0px 20px;
