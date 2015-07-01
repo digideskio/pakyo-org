@@ -2,26 +2,38 @@
 template: home
 ---
 
-<h1>
-  With Pakyow, you can start with the view and build the app on top. It's easy:
+<h1 style="text-align: center">
+  With Pakyow, you start with the view and build everything else on top. It's easy:
 </h1>
 
 <div class="container-3 fluid blurbs">
   <div class="col">
+    <span class="num">
+      1
+    </span>
+
     <p>
       Generate your app and immediately create views using HTML or your favorite template language.
     </p>
   </div>
 
   <div class="col">
+    <span class="num">
+      2
+    </span>
+
     <p>
-      Start the app and see the views in your local browser without adding any back-end code.
+      Start the app and immediately use it in your local browser without writing any back-end code.
     </p>
   </div>
 
   <div class="col">
+    <span class="num">
+      3
+    </span>
+
     <p>
-      Add back-end code (written in Ruby) without changing any of the previously created views.
+      Add back-end code (written in Ruby) on top without changing any of the previously created views.
     </p>
   </div>
 </div>
@@ -41,6 +53,31 @@ template: home
     </p>
 
     <!-- @include mailing_list -->
+
+    <ul class="plain social-links">
+      <li>
+        <a href="https://twitter.com/pakyow" class="twitter-follow-button" data-show-count="false">Follow @pakyow</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+
+      <li>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1611480632444271";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <div class="fb-like" data-href="https://www.facebook.com/pakyow.rb" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      </li>
+
+      <li>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <!-- Place this tag where you want the +1 button to render. -->
+        <div class="g-plusone" data-size="medium" data-href="http://pakyow.org"></div>
+      </li>
   </div>
 
   <div class="col">

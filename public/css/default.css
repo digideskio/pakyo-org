@@ -40,14 +40,15 @@ h3 {
 a {
   text-decoration: none; }
   a.box {
-    border: 1px solid #f8ccc8;
-    color: #333;
+    border: 1px solid #e54d42;
     padding: 10px 20px;
-    background: none; }
+    background: #e54d42;
+    color: #fff; }
     a.box i {
       padding-right: 5px; }
     a.box:hover {
-      border-color: #e54d42; }
+      color: #333;
+      background: none; }
 
 p a, li a {
   color: #19558d;
@@ -372,13 +373,28 @@ code, .highlight {
     .blurbs > div p {
       margin: 0;
       font-size: 15px;
-      line-height: 20px; }
+      line-height: 20px;
+      text-align: center; }
     .blurbs > div .version {
       float: right;
       margin-top: 3px;
       font-size: 11px;
       color: #999;
       font-family: "Ideal Sans A", "Ideal Sans B", sans-serif; }
+    .blurbs > div .num {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      background: #aaa;
+      border-radius: 30px;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      line-height: 35px;
+      border: 1px solid #fff; }
 
 .moving {
   font-size: 15px;
@@ -507,11 +523,13 @@ code, .highlight {
     background: #e54d42;
     color: #fff;
     border-color: #e54d42;
-    margin-left: -5px;
-    text-transform: uppercase; }
+    margin-left: -4px; }
+    #mc_embed_signup .button:hover {
+      background: none;
+      color: #333; }
   #mc_embed_signup input {
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 1px solid #e54d42;
     outline: 0;
     line-height: normal;
     padding: 0px 20px;
@@ -654,5 +672,10 @@ blockquote {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26753', endColorstr='#e74c3c',GradientType=0 );
   /* IE6-9 */
   border-bottom: 1px solid #bd0703; }
+
+.social-links li {
+  margin-bottom: 10px; }
+.social-links iframe {
+  display: block; }
 
 /*# sourceMappingURL=default.css.map */

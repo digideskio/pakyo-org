@@ -196,6 +196,7 @@ code, .highlight {
       margin:0;
       font-size:15px;
       line-height: 20px;
+      text-align: center;
     }
 
     .version {
@@ -205,6 +206,22 @@ code, .highlight {
       // text-transform:uppercase;
       color:#999;
       font-family:$font-brand;
+    }
+
+    .num {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      background: #aaa;
+      border-radius: 30px;
+      width: 35px;
+      height: 35px;
+      margin: auto;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      line-height: 35px;
+      border: 1px solid #fff;
     }
   }
 }
@@ -411,16 +428,20 @@ code, .highlight {
 
   .button {
     border-radius:0;
-    background:$color-red;
-    color:#fff;
+    background: $color-red;
+    color: #fff;
     border-color: $color-red;
-    margin-left:-5px;
-    text-transform: uppercase;
+    margin-left:-4px;
+
+    &:hover {
+      background: none;
+      color: $color-black;
+    }
   }
 
   input {
     box-sizing:border-box;
-    border:1px solid $color-gray;
+    border:1px solid $color-red;
     outline:0;
     line-height: normal;
     padding:0px 20px;
@@ -653,10 +674,6 @@ blockquote {
   }
 }
 
-
-
-
-
 .top-header {
   padding: 80px 0;
   margin-top: 50px;
@@ -672,4 +689,14 @@ blockquote {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f26753', endColorstr='#e74c3c',GradientType=0 ); /* IE6-9 */
 
   border-bottom: 1px solid #bd0703;
+}
+
+.social-links {
+  li {
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    display: block;
+  }
 }
