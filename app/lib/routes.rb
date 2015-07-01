@@ -136,7 +136,7 @@ Pakyow::App.routes do
   end
 
   get 'warmup' do
-    set_active_nav(:warmup)
+    redirect '/docs/warmup', 301
   end
 
   get 'get-involved' do
