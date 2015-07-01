@@ -2,10 +2,10 @@
 
 $font-main: "museo-sans", sans-serif;
 $font-header: "proxima-nova", sans-serif;
-$font-brand: "futura-pt", sans-serif;
+$font-brand: 'Ideal Sans A', 'Ideal Sans B', sans-serif;
 
 $color-black: #333;
-$color-red: #ff0000;
+$color-red: #e54d42;
 $color-gray: #999;
 $color-blue: #19558d;
 
@@ -62,17 +62,18 @@ a {
   text-decoration: none;
 
   &.box {
-    border: 1px solid lighten($color-red, 30%);
-    color:$color-black;
+    border: 1px solid $color-red;
     padding:10px 20px;
-    background:none;
+    background:$color-red;
+    color:#fff;
 
     i {
       padding-right:5px;
     }
 
     &:hover {
-      border-color:$color-red;
+      color:$color-black;
+      background:none;
     }
   }
 }
@@ -135,27 +136,28 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   top:0;
   position:fixed;
   background:rgba(255,255,255,0.98);
-  height:70px;
+  height:50px;
   width:100%;
   box-shadow:0px 0px 5px rgba(0,0,0,0.25);
   z-index:10;
-  
+
   img {
-    margin-top:13px;
-    margin-left:30px;
-    width:45px;
-    height:45px;
+    margin-top:10px;
+    margin-left:10px;
+    width:30px;
+    height:30px;
   }
-  
+
   h1 {
     font-weight:normal;
     font-family:$font-brand;
-    font-size:36px;
+    font-size:28px;
     display:inline-block;
     text-transform:lowercase;
-    margin-left:15px;
+    margin-left:10px;
     vertical-align:top;
-    margin-top:10px;
+    margin-top:8px;
+    line-height: 28px;
 
     .version {
       font-weight:500;
@@ -178,9 +180,9 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
 
 #navigation {
   position:absolute;
-  right:30px;
+  right:10px;
   display:inline-block;
-  top:28px;
+  top:15px;
   
   li {
     display:inline-block;
@@ -213,7 +215,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
 #footer {
   text-align: center;
   margin:80px 0 40px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color:#aaa;
   left:70px;
   right:70px;
@@ -229,7 +231,7 @@ input[type='submit']:hover img, input[type='button']:hover img, button:hover img
   }
 
   p {
-    font-size:11px;
+    font-size:12px;
     line-height: 22px;
   }
 }
