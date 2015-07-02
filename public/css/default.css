@@ -627,13 +627,10 @@ blockquote {
     display: none !important; }
 
   #main {
-    margin-top: 100px; }
+    margin-top: 60px; }
 
   #header > a img {
-    margin-left: 10px;
-    width: 35px;
-    height: 35px;
-    margin-top: 18px; }
+    margin-left: 10px; }
 
   #navigation {
     right: 10px; }
@@ -642,9 +639,13 @@ blockquote {
 
   .big {
     font-size: 16px;
-    text-align: left;
-    margin-bottom: 30px;
-    line-height: 26px; }
+    margin-bottom: 0px;
+    line-height: 26px;
+    width: auto; }
+
+  .top-header {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important; }
 
   h1 {
     font-size: 16px;

@@ -643,16 +643,15 @@ blockquote {
   }
 
   #main {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   #header {
     > a {
       img {
         margin-left: 10px;
-        width:35px;
-        height:35px;
-        margin-top:18px;
+        // width:35px;
+        // height:35px;
       }
     }
   }
@@ -667,9 +666,15 @@ blockquote {
 
   .big {
     font-size:16px;
-    text-align: left;
-    margin-bottom: 30px;
+    // text-align: left;
+    margin-bottom: 0px;
     line-height:26px;
+    width: auto;
+  }
+
+  .top-header {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
   }
 
   h1 {
