@@ -27,7 +27,7 @@ Pakyow::App.bindings do
 
   scope :contributor do
     binding :avatar do
-      {:src => "#{bindable['avatar_url']}"}
+      {:src => "#{bindable['avatar_url']}&s=178"}
     end
 
     binding :login do
