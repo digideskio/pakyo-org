@@ -10,7 +10,7 @@ gem "builder", "~>2.0"
 gem "httparty"
 
 group :development do
-  gem 'capistrano'
+  gem 'capistrano', "3.2.1"
   gem "capistrano-rbenv"
   gem "capistrano-bundler"
 end
