@@ -1,12 +1,13 @@
 source "http://rubygems.org"
 
-gem "pakyow", "0.9.1"
+gem "pakyow", github: 'pakyow/pakyow'
 gem "thin", :platforms => :mri
 gem "sass"
 gem "rake"
 gem "rdiscount"
 gem "pygments.rb"
 gem "builder", "~>2.0"
+gem "httparty"
 
 group :development do
   gem 'capistrano'

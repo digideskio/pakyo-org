@@ -1,7 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'pakyow'
+require 'pakyow-support'
+require 'pakyow-core'
+require 'pakyow-presenter'
+
 require 'rdiscount'
 require 'pygments'
 require 'builder'

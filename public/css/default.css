@@ -500,7 +500,39 @@ code, .highlight {
   margin: auto;
   margin-top: 60px; }
   .contributors h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
+  .contributors .contributor {
+    border: 1px solid #e5e5e5;
+    width: 200px;
+    float: left;
+    margin-right: 21px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 21px; }
+    .contributors .contributor:nth-child(3n+1) {
+      margin-right: 0; }
+    .contributors .contributor a {
+      color: #e54d42;
+      border-bottom: 1px solid #fbe1df;
+      padding-bottom: 1px; }
+    .contributors .contributor img {
+      width: 178px;
+      height: 178px;
+      display: block;
+      margin-bottom: 10px; }
+    .contributors .contributor i {
+      font-size: 20px; }
+    .contributors .contributor .login {
+      vertical-align: top;
+      margin-left: 5px; }
+    .contributors .contributor .count {
+      float: right;
+      font-size: 11px;
+      background: #e54d42;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-weight: bold; }
 
 .blog-links {
   margin-top: 80px; }
@@ -684,5 +716,8 @@ blockquote {
   margin-bottom: 10px; }
 .social-links iframe {
   display: block; }
+.social-links.inline li {
+  float: left;
+  margin-right: 15px; }
 
 /*# sourceMappingURL=default.css.map */

@@ -141,6 +141,8 @@ Pakyow::App.routes do
 
   get 'get-involved' do
     set_active_nav(:community)
+
+    view.scope(:contributor).apply(Contributor.all)
   end
 
   # to fix google crawl errors
