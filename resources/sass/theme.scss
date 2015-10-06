@@ -1,0 +1,99 @@
+@import "bourbon/bourbon";
+@import "pakyow-css/vars";
+
+$font-main: "Open Sans", sans-serif;
+
+$color-black: #202020;
+$color-red: #e54d42;
+$color-gray: #777;
+$color-lgray: #ddd;
+$color-mgray: #999;
+
+$weight-semibold: 600;
+
+$margin: $container-margin;
+
+$h1-factor: 2.39;
+
+$em-base: 10;
+
+$radius: rem(3);
+
+$message-hfont-size: rem(13);
+$message-pfont-size: rem(10);
+
+$border:rem(1) solid #aaa;
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@import "pakyow-css/base";
+
+hr {
+  border: none;
+  height: 1px;
+  background: $color-lgray;
+}
+
+strong {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.wrapper {
+  margin: 60px auto;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+nav {
+  a {
+    color: $color-black;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: $weight-semibold;
+
+    &.middle {
+      margin: 0 60px;
+      width: 90px;
+      height: 90px;
+
+      img {
+        position: absolute;
+        left: 50%;
+        margin-left: -45px;
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+
+main {
+  margin-bottom: 420px;
+}
+
+footer {
+  margin-top: 60px;
+
+  svg {
+    fill: $color-red;
+  }
+
+  p, a {
+    @include rem(font-size, 11);
+    color: $color-mgray;
+  }
+}
+
+.gplus {
+  display: none;
+}

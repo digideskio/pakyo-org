@@ -4,6 +4,7 @@ require 'bundler/setup'
 require 'pakyow-support'
 require 'pakyow-core'
 require 'pakyow-presenter'
+require 'pakyow-slim'
 
 require 'rdiscount'
 require 'pygments'

@@ -8,6 +8,7 @@ gem "rdiscount"
 gem "pygments.rb"
 gem "builder", "~> 3.2"
 gem "httparty"
+gem "pakyow-slim"
 
 group :development do
   gem 'capistrano', "~> 3.4"

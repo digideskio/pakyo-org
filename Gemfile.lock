@@ -135,6 +135,10 @@ GEM
     nio4r (1.1.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    pakyow-slim (0.2.1)
+      pakyow-core (~> 0.9)
+      pakyow-presenter (~> 0.9)
+      slim (~> 3.0)
     posix-spawn (0.3.11)
     premailer (1.8.4)
       css_parser (>= 1.3.6)
@@ -148,14 +152,19 @@ GEM
     redis (3.2.1)
     rspec-logsplit (0.1.3)
     sass (3.4.18)
+    slim (3.0.3)
+      temple (~> 0.7.3)
+      tilt (>= 1.3.3, < 2.1)
     sshkit (1.7.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    temple (0.7.5)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
       rack (~> 1.0)
+    tilt (2.0.1)
     timers (4.1.1)
       hitimes
     websocket_parser (1.0.0)
@@ -171,6 +180,7 @@ DEPENDENCIES
   capistrano-rbenv
   httparty
   pakyow!
+  pakyow-slim
   pygments.rb
   rake
   rdiscount
