@@ -28,24 +28,24 @@ p code {
   display: inline; }
 
 h1 {
-  font-size: 31.07px;
-  font-size: 3.107rem;
-  line-height: 43.498px;
-  line-height: 4.3498rem;
-  margin-bottom: 21.749px;
-  margin-bottom: 2.1749rem;
-  margin-top: 32.6235px;
-  margin-top: 3.26235rem; }
+  font-size: 23.4px;
+  font-size: 2.34rem;
+  line-height: 32.76px;
+  line-height: 3.276rem;
+  margin-bottom: 16.38px;
+  margin-bottom: 1.638rem;
+  margin-top: 24.57px;
+  margin-top: 2.457rem; }
 
 h2 {
-  font-size: 24.7px;
-  font-size: 2.47rem;
-  line-height: 34.58px;
-  line-height: 3.458rem;
-  margin-bottom: 17.29px;
-  margin-bottom: 1.729rem;
-  margin-top: 25.935px;
-  margin-top: 2.5935rem; }
+  font-size: 16.9px;
+  font-size: 1.69rem;
+  line-height: 23.66px;
+  line-height: 2.366rem;
+  margin-bottom: 11.83px;
+  margin-bottom: 1.183rem;
+  margin-top: 17.745px;
+  margin-top: 1.7745rem; }
 
 h3 {
   font-size: 18.2px;
@@ -167,31 +167,70 @@ fieldset {
 input, textarea {
   outline: none; }
 
+footer {
+  margin-top: 100px; }
+  footer svg {
+    fill: #ff3800; }
+  footer p, footer a {
+    font-size: 11px;
+    font-size: 1.1rem;
+    color: #999; }
+  footer .social-links {
+    float: right; }
+    footer .social-links li {
+      margin-bottom: 5px; }
+    footer .social-links iframe {
+      display: block; }
+
+.gplus {
+  display: none; }
+
+h2 {
+  font-weight: 600; }
+
+a {
+  color: #ff3800;
+  font-weight: 600; }
+
 hr {
   border: none;
   height: 1px;
   background: #ddd; }
 
-strong {
+h1 strong {
   text-transform: uppercase;
   font-weight: 700; }
+
+.marketing {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 28px;
+  line-height: 2.8rem;
+  color: #555; }
+
+pre.highlight {
+  border: 1px solid #ddd;
+  font-family: "Source Code Pro", fixed-width;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 30px 0; }
 
 .wrapper {
   margin: 60px auto; }
 
 header {
-  margin-bottom: 60px; }
+  margin-bottom: 100px; }
 
 nav a {
   color: #202020;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 25px;
+  margin: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600; }
   nav a.middle {
-    margin: 0 60px;
+    margin: 0 20px;
     width: 90px;
     height: 90px; }
     nav a.middle img {
@@ -200,20 +239,176 @@ nav a {
       margin-left: -45px;
       width: 90px;
       height: 90px; }
+nav .nav-left {
+  top: 100px;
+  position: absolute;
+  right: 50%;
+  margin-right: 70px; }
+nav .nav-right {
+  top: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: 70px; }
 
-main {
-  margin-bottom: 420px; }
+.version-wrapper {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 15px;
+  font-size: 1.5rem; }
+  .version-wrapper .version-tag {
+    background: #999;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 20px;
+    text-decoration: none; }
+  .version-wrapper .version-text {
+    text-transform: uppercase;
+    font-weight: 600; }
+  .version-wrapper .get-started {
+    background: #ff3800;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 20px;
+    text-decoration: none; }
 
-footer {
-  margin-top: 60px; }
-  footer svg {
-    fill: #e54d42; }
-  footer p, footer a {
+.concept-text {
+  color: #555; }
+
+.concept-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-size: 1.4rem; }
+  .concept-link i {
+    margin-right: 10px;
+    font-size: 11px;
+    font-size: 1.1rem; }
+
+.ready {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.social-links.inline li {
+  float: left;
+  margin-right: 20px; }
+
+.contributors h2 {
+  margin-bottom: 30px; }
+.contributors .contributor {
+  border: 1px solid #e5e5e5;
+  width: 218px;
+  float: left;
+  margin-right: 21px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 21px; }
+  .contributors .contributor:nth-child(3n) {
+    margin-right: 0; }
+  .contributors .contributor img {
+    width: 196px;
+    height: 196px;
+    display: block;
+    margin-bottom: 10px; }
+  .contributors .contributor i {
+    font-size: 20px; }
+  .contributors .contributor .login {
+    line-height: 20px;
+    vertical-align: top;
+    margin-left: 5px; }
+  .contributors .contributor .count {
+    float: right;
+    font-size: 11px;
+    background: #ff3800;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+    font-weight: bold; }
+
+#mc_embed_signup {
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px 8px;
+  margin-top: 120px;
+  margin-bottom: -60px; }
+  #mc_embed_signup p {
+    font-weight: 600;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  #mc_embed_signup #mce-EMAIL {
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding: 5px 8px;
+    width: 400px; }
+  #mc_embed_signup #mc-embedded-subscribe {
+    color: #fff;
+    background: #202020;
+    border: 1px solid #202020;
+    font-size: 13px;
+    font-size: 1.3rem;
+    padding: 5px 8px;
+    cursor: pointer; }
+
+.blog-list {
+  padding-top: 10px; }
+  .blog-list article {
+    margin-top: 60px; }
+    .blog-list article h1 {
+      margin-bottom: 10px; }
+      .blog-list article h1 a {
+        color: #202020;
+        text-decoration: none; }
+        .blog-list article h1 a:hover {
+          text-decoration: underline; }
+    .blog-list article .date {
+      font-size: 11px;
+      font-size: 1.1rem;
+      color: #555; }
+  .blog-list hr {
+    width: 300px;
+    margin: 80px auto; }
+
+.blog-links a {
+  background: #202020;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px; }
+  .blog-links a:hover {
+    background: #3a3a3a; }
+.blog-links .link-feed {
+  float: right; }
+
+.blog-show article {
+  margin-top: 40px; }
+  .blog-show article h1 {
+    color: #202020;
+    margin-bottom: 5px;
+    font-weight: 600; }
+  .blog-show article .date {
     font-size: 11px;
     font-size: 1.1rem;
-    color: #999; }
+    color: #555; }
+  .blog-show article .body {
+    margin-top: 40px; }
 
-.gplus {
-  display: none; }
+.post-links .social {
+  float: right; }
+  .post-links .social li {
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px; }
+.post-links > a {
+  background: #202020;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 25px; }
+  .post-links > a:hover {
+    background: #3a3a3a; }
 
 /*# sourceMappingURL=theme.css.map */

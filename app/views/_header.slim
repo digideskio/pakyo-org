@@ -1,21 +1,24 @@
 header.align-c
   nav@@nav
-    a@item-overview href="/"
-      | Overview
+    .nav-left
+      a@item-overview href="/"
+        | Intro
+        
+      a@item-community href="/get-involved"
+        | Community
 
-    a@item-docs href="/docs"
-      | Docs
+      a@item-blog href="/blog"
+        | Blog
 
     a.middle href="/"
       img src="/images/pakyow-small.png" alt="Pakyow"
 
-      <!-- <h1 class="res-hide-s res-hide-m"> -->
-      <!--   pakyow.org -->
-      <!--   <span class="version">v0.9</span> -->
-      <!-- </h1> -->
+    .nav-right
+      a@item-docs href="/docs"
+        | Docs
+        
+      a@item-forums href="http://forums.pakyow.org"
+        | Forums
 
-    a@item-community href="/get-involved"
-      | Contribute
-
-    a@item-blog href="/blog"
-      | Blog
+      a@item-code href="https://github.com/pakyow/pakyow"
+        | Code

@@ -1,54 +1,11 @@
-@import "bourbon/bourbon";
-@import "pakyow-css/vars";
-
-$font-main: "Open Sans", sans-serif;
-
-$color-black: #202020;
-$color-red: #e54d42;
-$color-gray: #777;
-$color-lgray: #ddd;
-$color-mgray: #999;
-
-$weight-semibold: 600;
-
-$margin: $container-margin;
-
-$h1-factor: 2.39;
-
-$em-base: 10;
-
-$radius: rem(3);
-
-$message-hfont-size: rem(13);
-$message-pfont-size: rem(10);
-
-$border:rem(1) solid #aaa;
-
-@mixin mobile {
-  @media (max-width: 500px) {
-    @content;
-  }
-}
-
-@import "pakyow-css/base";
-
-hr {
-  border: none;
-  height: 1px;
-  background: $color-lgray;
-}
-
-strong {
-  text-transform: uppercase;
-  font-weight: 700;
-}
+@import "shared";
 
 .wrapper {
   margin: 60px auto;
 }
 
 header {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 nav {
@@ -56,13 +13,13 @@ nav {
     color: $color-black;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 25px;
+    margin: 0 15px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: $weight-semibold;
 
     &.middle {
-      margin: 0 60px;
+      margin: 0 20px;
       width: 90px;
       height: 90px;
 
@@ -75,25 +32,158 @@ nav {
       }
     }
   }
-}
 
-main {
-  margin-bottom: 420px;
-}
-
-footer {
-  margin-top: 60px;
-
-  svg {
-    fill: $color-red;
+  .nav-left {
+    top: 100px;
+    position: absolute;
+    right: 50%;
+    margin-right: 70px;
   }
 
-  p, a {
+  .nav-right {
+    top: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: 70px;
+  }
+}
+
+.version-wrapper {
+  text-align: center;
+  margin: 60px 0;
+  @include rem(font-size, 15);
+
+  .version-tag {
+    background: $color-mgray;
+    color: $color-white;
+    font-weight: $weight-semibold;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .version-text {
+    text-transform: uppercase;
+    font-weight: $weight-semibold;
+  }
+
+  .get-started {
+    background: $color-red;
+    color: $color-white;
+    font-weight: $weight-semibold;
+    padding: 5px 8px;
+    border-radius: 3px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+}
+
+.concept-text {
+  color: $color-dgray;
+}
+
+.concept-link {
+  // color: $color-white;
+  // background: $color-mgray;
+  display: inline-block;
+  // padding: 10px 15px;
+  // border-radius: 3px;
+  // text-decoration: none;
+  margin-top: 10px;
+  @include rem(font-size, 14);
+
+  i {
+    margin-right: 10px;
     @include rem(font-size, 11);
-    color: $color-mgray;
   }
 }
 
-.gplus {
-  display: none;
+.ready {
+  @include rem(font-size, 14);
 }
+
+.social-links.inline {
+  li {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.contributors {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .contributor {
+    border: 1px solid #e5e5e5;
+    width: 218px;
+    float: left;
+    margin-right: 21px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 21px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    img {
+      width: 196px;
+      height: 196px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    i {
+      font-size: 20px;
+    }
+
+    .login {
+      line-height: 20px;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+
+    .count {
+      float: right;
+      font-size: 11px;
+      background: $color-red;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+  }
+}
+
+#mc_embed_signup {
+  background: $color-xgray;
+  border: 1px solid $color-lgray;
+  border-radius: 3px;
+  padding: 5px 8px;
+  margin-top: 120px;
+  margin-bottom: -60px;
+
+  p {
+    font-weight: 600;
+    @include rem(font-size, 14);
+  }
+
+  #mce-EMAIL {
+    @include rem(font-size, 13);
+    padding: 5px 8px;
+    width: 400px;
+  }
+
+  #mc-embedded-subscribe {
+    color: $color-white;
+    background: $color-black;
+    border: 1px solid $color-black;
+    @include rem(font-size, 13);
+    padding: 5px 8px;
+    cursor: pointer;
+  }
+}
+
+@import "blog";
