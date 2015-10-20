@@ -1,35 +1,27 @@
-require 'rubygems'
 require 'bundler/setup'
-
-require 'pakyow-support'
-require 'pakyow-core'
-require 'pakyow-presenter'
-
-require 'rdiscount'
-require 'pygments'
-require 'builder'
+require 'pakyow'
 
 require 'sass/plugin/rack'
 Sass::Plugin.options[:template_location] = './resources/sass'
 Sass::Plugin.options[:css_location] = './public/css'
 
 Pakyow::App.define do
-  after :load do
-    BlogPost.load
+  configure :global do
+    Bundler.require(:default, Pakyow::Config.env)
+
+    realtime.enabled = false
   end
 
-  config.app.default_environment = :development
-
-  configure(:development) do
-    require 'pp'
-    $stdout.sync = true
+  configure :development do
+    # TODO: set this to the same thing as production
+    $docs_path = '/Users/bryanp/code/pakyow/docs'
   end
 
-  configure(:prototype) do
+  configure :prototype do
     app.ignore_routes = true
   end
 
-  configure(:production) do
+  configure :production do
     app.auto_reload = false
     app.static = false
     app.errors_in_browser = false
@@ -38,13 +30,16 @@ Pakyow::App.define do
 
     Encoding.default_external = Encoding::UTF_8
     Encoding.default_internal = Encoding::UTF_8
-  end
 
-  processor :md do |content|
-    Formatter.format(content)
+    $docs_path = 'docs'
   end
 
   middleware do |builder|
     builder.use Sass::Plugin::Rack
+  end
+
+  after :load do
+    BlogPost.load
+    Category.load(YAML.load(File.read(File.join($docs_path, '_order.yaml'))))
   end
 end

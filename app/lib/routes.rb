@@ -158,4 +158,173 @@ Pakyow::App.routes do
   get '/2013/02/14/zero_eight_rc1_release' do
     redirect '/blog/2013/02/14/zero_eight_rc1_release', 301
   end
+
+  namespace :docs, '/docs', after: [:navigation, :canonical] do
+    fn :navigation do
+      render_nav(partial(:toc).scope(:category), Category.all)
+    end
+
+    fn :canonical do
+      view.scope(:head).prop(:canonical).attrs.href = req.path.gsub('_', '-')
+    end
+
+    default do
+      reroute('/docs/start')
+    end
+
+    # rewrites to handle doc renaming
+    get '/getting-started' do
+      redirect '/docs/start', 301
+    end
+
+    get '/getting-started/installation' do
+      redirect '/docs/start/installing', 301
+    end
+
+    get '/getting-started/generation' do
+      redirect '/docs/start/creating', 301
+    end
+
+    get '/getting-started/running' do
+      redirect '/docs/start/running', 301
+    end
+
+    get '/getting-started/contributing' do
+      redirect '/docs/start/contributing', 301
+    end
+
+    get '/getting-started/license' do
+      redirect '/docs/start/license', 301
+    end
+
+    get '/view-composition' do
+      redirect '/docs/presenting', 301
+    end
+
+    get '/view-composition/processors' do
+      redirect '/docs/presenting/processors', 301
+    end
+
+    get '/view-management' do
+      redirect '/docs/view-logic/api', 301
+    end
+
+    get '/view-management/:redir_slug' do
+      redirect '/docs/view-logic/' + params[:redir_slug], 301
+    end
+
+    get '/data-binding' do
+      redirect '/docs/view-logic', 301
+    end
+
+    get '/data-binding/binding-api' do
+      redirect '/docs/view-logic/api', 301
+    end
+
+    get '/data-binding/data-sets' do
+      redirect '/docs/view-logic/data-sets', 301
+    end
+
+    get '/data-binding/nested' do
+      redirect '/docs/view-logic/nested', 301
+    end
+
+    get '/bindings' do
+      redirect '/docs/view-logic/bindings', 301
+    end
+
+    get '/bindings/modifying-values' do
+      redirect '/docs/view-logic/bindings', 301
+    end
+
+    get '/bindings/view-access' do
+      redirect '/docs/view-logic/bindings', 301
+    end
+
+    get '/bindings/binding-sets' do
+      redirect '/docs/view-logic/bindings', 301
+    end
+
+    get '/configuration' do
+      redirect '/docs/config', 301
+    end
+
+    get '/working-with-forms' do
+      redirect '/docs/forms', 301
+    end
+
+    get '/handling-failure' do
+      redirect '/docs/failure', 301
+    end
+
+    get '/handling-failure/email' do
+      redirect '/docs/failure/email', 301
+    end
+    # /rewrites
+
+    get :doc, '/:category_slug' do
+      if slug = params[:category_slug]
+        slug.gsub!('-', '_')
+        presenter.path = 'docs/doc'
+
+        if slug == 'warmup'
+          set_active_nav(:warmup)
+        else
+          set_active_nav(:docs)
+        end
+
+        if category = Category.find(params[:category_slug])
+          view.title = "Pakyow &#8250; Docs &#8250; #{category.name}"
+          view.scope(:head).prop(:description).attrs[:content] = category.description
+
+          container(:default).scope(:category).with do
+            bind(category)
+          end
+
+          set_next_up(category)
+          set_contrib(category)
+        else
+          app.handle 404
+        end
+      else
+        presenter.path = 'docs'
+      end
+    end
+
+    get :topic, '/:category_slug/:topic_slug' do
+      c_slug = params[:category_slug]
+      t_slug = params[:topic_slug]
+
+      if c_slug && t_slug
+        c_slug.gsub!('-', '_')
+        t_slug.gsub!('-', '_')
+
+        presenter.path = 'docs/topic'
+
+        if c_slug == 'warmup'
+          set_active_nav(:warmup)
+        else
+          set_active_nav(:docs)
+        end
+
+        if category = Category.find(params[:category_slug])
+          if topic = category.topics.find { |t| t.slug == t_slug }
+            view.title = "Pakyow &#8250; Docs &#8250; #{category.name} &#8250; #{topic.name}"
+            view.scope(:head).prop(:description).attrs[:content] = topic.description
+
+            container(:default).scope(:topic).bind(topic)
+
+            set_next_up(category, topic)
+            set_contrib(category, topic)
+          else
+            app.handle 404
+          end
+        else
+          app.handle 404
+        end
+      else
+        presenter.path = 'docs'
+      end
+    end
+  end
 end

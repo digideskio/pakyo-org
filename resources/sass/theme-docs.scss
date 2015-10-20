@@ -1,0 +1,163 @@
+@import "shared";
+
+body {
+  margin: 0;
+}
+
+header {
+  background: $color-black;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  h1 {
+    display: inline-block;
+    font-family: "Ideal Sans A", "Ideal Sans B", sans-serif;
+    text-transform: lowercase;
+    color: $color-white;
+    margin: 0;
+    vertical-align: top;
+    line-height: 42px;
+    margin-left: 10px;
+
+    .version {
+      font-family: $font-main;
+      @include rem(font-size, 11);
+      margin-left: 5px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  nav {
+    float: right;
+    line-height: 42px;
+
+    a {
+      margin-left: 20px;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+nav.toc {
+  position: fixed;
+  top: 67px;
+  bottom: 0;
+  overflow: auto;
+  width: 250px;
+  padding: 30px 0;
+  border-right: 1px solid $color-lgray;
+
+  > ul {
+    list-style: none;
+
+    > li {
+      margin-bottom: 20px;
+
+      > a {
+        @include rem(font-size, 15);
+        text-transform: uppercase;
+        border-bottom: 1px solid $color-lgray;
+        display: inline-block;
+        margin-bottom: 8px;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom-color: $color-black;
+        }
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    ul {
+      margin-left: 0;
+      list-style: none;
+
+      a {
+        font-weight: normal;
+      }
+    }
+
+    li.active {
+      > a {
+        color: $color-red;
+        font-weight: $weight-semibold;
+      }
+    }
+  }
+
+  a {
+    color: $color-black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  margin-top: 97px;
+}
+
+.doc-footer {
+  margin-top: 80px;
+  padding: 10px 0;
+  border-top: 1px solid $color-lgray;
+  border-bottom: 1px solid $color-lgray;
+  margin-bottom: -40px;
+
+  * {
+    margin-bottom: 0;
+  }
+
+  .next-up {
+    float: right;
+  }
+
+  .contribute {
+    * {
+      color: $color-gray;
+      font-weight: normal;
+    }
+
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+.article {
+  min-height: 300px;
+
+  h1 {
+    border-bottom: 2px solid $color-gray;
+    font-weight: $weight-semibold;
+    margin-bottom: 30px;
+  }
+
+  p {
+    @include rem(line-height, 25);
+    @include rem(font-size, 15);
+    margin-bottom: 20px;
+  }
+}
+
+main, footer {
+  width: 700px;
+  margin-left: 280px;
+}
+
+footer {
+  margin-right: 30px;
+}

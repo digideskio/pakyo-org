@@ -59,7 +59,8 @@ class BlogPost
   end
 
   def html(body = self.body)
-    Formatter.format(body)
+    processor = Pakyow.app.presenter.processor_store[:md]
+    processor.call(body)
   end
 
   protected
