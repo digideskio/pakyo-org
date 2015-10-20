@@ -28,3 +28,10 @@ namespace :db do
   task :seed do
   end
 end
+
+namespace :docs do
+  desc "update to the latest doc files"
+  task :update do
+    system 'rm -rf docs && git clone git@github.com:pakyow/docs.git'
+  end
+end
