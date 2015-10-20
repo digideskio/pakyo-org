@@ -14,9 +14,9 @@ gem 'httparty'
 gem 'pakyow-slim'
 gem 'pakyow-markdown'
 
-group :development do
-  gem 'sass'
+gem 'sass'
 
+group :development do
   gem 'capistrano', '~> 3.4'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
