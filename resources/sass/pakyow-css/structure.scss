@@ -96,11 +96,11 @@
     width: $start-width;
   }
 
-  @media all and (max-width: $container-width) {
-    *[class*="container"] {
-      width: auto;
-    }
-  }
+  // @media all and (max-width: $container-width) {
+  //   *[class*="container"] {
+  //     width: auto;
+  //   }
+  // }
 
   @for $i from 2 through $num-columns {
     $w: ($start-width - ($container-margin * ($i - 1))) / $i;

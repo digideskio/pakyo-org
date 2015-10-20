@@ -6,9 +6,11 @@
 
 header {
   margin-bottom: 100px;
+  min-width: $container-width;
 }
 
 nav {
+  min-width: $container-width;
   a {
     color: $color-black;
     display: inline-block;
