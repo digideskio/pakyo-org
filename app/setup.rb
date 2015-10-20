@@ -35,7 +35,7 @@ Pakyow::App.define do
   end
 
   middleware do |builder|
-    builder.use Sass::Plugin::Rack
+    builder.use Sass::Plugin::Rack if Pakyow::Config.env == :development
   end
 
   after :load do
