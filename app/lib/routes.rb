@@ -109,6 +109,9 @@ Pakyow::App.routes do
 
     rfc882 = "%a, %d %b %Y %H:%M:%S %Z"
 
+    processor = Pakyow.app.presenter.processor_store[:md]
+
+
     xml = builder.rss(:version => 2.0, 'xmlns:atom' => 'http://www.w3.org/2005/Atom') do |rss|
       rss.channel do |channel|
         channel.title "Pakyow Development Blog"
@@ -122,7 +125,7 @@ Pakyow::App.routes do
         posts.each do |post|
           channel.item do |item|
             item.title post.title
-            item.description RDiscount.new(post.body).to_html
+            item.description processor.call(post.body) #RDiscount.new(post.body).to_html
             item.link File.join("http://pakyow.org", post.permalink)
             item.guid File.join("http://pakyow.org", post.permalink), :isPermaLink => true
             item.pubDate post.published_at.strftime(rfc882)
