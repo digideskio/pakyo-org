@@ -184,6 +184,10 @@ Pakyow::App.routes do
       redirect '/docs/start/installing', 301
     end
 
+    get '/getting-started/installing' do
+      redirect '/docs/start/installing', 301
+    end
+
     get '/getting-started/generation' do
       redirect '/docs/start/creating', 301
     end
@@ -214,6 +218,10 @@ Pakyow::App.routes do
 
     get '/view-management/:redir_slug' do
       redirect '/docs/view-logic/' + params[:redir_slug], 301
+    end
+
+    get '/view-logic/traversing' do
+      redirect '/docs/view-logic/api', 301
     end
 
     get '/data-binding' do
