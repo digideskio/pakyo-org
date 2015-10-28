@@ -35,4 +35,26 @@ namespace :docs do
   task :update do
     system 'rm -rf docs && git clone git@github.com:pakyow/docs.git'
   end
+
+  desc 'generate sitemap content for docs'
+  task :sitemap => [:'pakyow:stage'] do
+    docs = 'http://pakyow.org/docs'
+    now = Time.now
+
+    Category.all.each do |category|
+      puts  "<url>\n"\
+            "  <loc>#{File.join(docs, category.uri)}</loc>\n"\
+            "  <changefreq>monthly</changefreq>\n"\
+            "  <lastmod>#{now.year}-#{now.month}-#{now.day}T00:00:00Z</lastmod>\n"\
+            "</url>\n"
+
+      category.topics.each do |topic|
+        puts  "<url>\n"\
+            "  <loc>#{File.join(docs, topic.uri)}</loc>\n"\
+            "  <changefreq>monthly</changefreq>\n"\
+            "  <lastmod>#{now.year}-#{now.month}-#{now.day}T00:00:00Z</lastmod>\n"\
+            "</url>\n"
+      end
+    end
+  end
 end
