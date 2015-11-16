@@ -288,32 +288,42 @@
 <url>
   <loc>http://pakyow.org/docs/warmup</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/warmup/start</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/warmup/view</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/backend</loc>
+  <loc>http://pakyow.org/docs/warmup/data</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/counters</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
+</url>
+<url>
+  <loc>http://pakyow.org/docs/warmup/comments</loc>
+  <changefreq>monthly</changefreq>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/warmup/deployment</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/warmup/conclusion</loc>
   <changefreq>monthly</changefreq>
-  <lastmod>2015-10-28T00:00:00Z</lastmod>
+  <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
   <loc>http://pakyow.org/docs/data</loc>
