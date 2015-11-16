@@ -8,7 +8,7 @@ $color-white: #fff;
 $color-black: #202020;
 $color-red: #ff3800;
 $color-gray: #777;
-$color-xgray: #eee;
+$color-xgray: #f7f7f7;
 $color-lgray: #ddd;
 $color-mgray: #999;
 $color-dgray: #555;
@@ -98,4 +98,10 @@ pre.highlight {
   border-radius: 2px;
   padding: 10px;
   margin: 30px 0;
+}
+
+p code {
+  background: $color-xgray;
+  border-radius: 2px;
+  padding: 5px 5px;
 }
