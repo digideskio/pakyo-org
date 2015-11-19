@@ -174,7 +174,7 @@ footer {
   footer p, footer a {
     font-size: 11px;
     font-size: 1.1rem;
-    color: #999; }
+    color: #aaa; }
   footer .social-links {
     float: right; }
     footer .social-links li {
@@ -264,7 +264,7 @@ nav {
   font-size: 15px;
   font-size: 1.5rem; }
   .version-wrapper .version-tag {
-    background: #999;
+    background: #aaa;
     color: #fff;
     font-weight: 500;
     padding: 5px 8px;
@@ -285,6 +285,18 @@ nav {
 
 .concept-text {
   color: #555; }
+
+.concept-img.float-l {
+  margin-left: -30px;
+  margin-right: 30px; }
+.concept-img.float-r {
+  margin-right: -30px;
+  margin-left: 30px; }
+.concept-img.concept-simplicity {
+  margin-right: -65px; }
+
+.concept-header {
+  white-space: nowrap; }
 
 .concept-link {
   display: inline-block;

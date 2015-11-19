@@ -85,6 +85,26 @@ nav {
   color: $color-dgray;
 }
 
+.concept-img {
+  &.float-l {
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+
+  &.float-r {
+    margin-right: -30px;
+    margin-left: 30px;
+  }
+
+  &.concept-simplicity {
+    margin-right: -65px;
+  }
+}
+
+.concept-header {
+  white-space: nowrap;
+}
+
 .concept-link {
   // color: $color-white;
   // background: $color-mgray;
