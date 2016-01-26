@@ -58,3 +58,13 @@ namespace :docs do
     end
   end
 end
+
+namespace :app do
+  task :prelaunch do
+    %w(
+      docs:update
+    ).each {|t|
+      Rake::Task[t].invoke
+    }
+  end
+end
