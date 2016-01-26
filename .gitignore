@@ -6,3 +6,4 @@ config/deploy.rb
 .bundle
 bin
 *.map
+docs
