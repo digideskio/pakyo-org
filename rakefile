@@ -33,7 +33,7 @@ end
 namespace :docs do
   desc "update to the latest doc files"
   task :update do
-    system 'rm -rf docs && git clone git@github.com:pakyow/docs.git'
+    system 'rm -rf docs && git clone git://github.com/pakyow/docs.git'
   end
 
   desc 'generate sitemap content for docs'
