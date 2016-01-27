@@ -1,6 +1,8 @@
 require 'bundler/setup'
 require 'pakyow'
 
+require_relative 'lib/middleware/non-www_enforcer'
+
 require 'sass/plugin/rack'
 Sass::Plugin.options[:template_location] = './resources/sass'
 Sass::Plugin.options[:css_location] = './public/css'
@@ -33,6 +35,8 @@ Pakyow::App.define do
   end
 
   middleware do |builder|
+    builder.use Rack::SslEnforcer if Pakyow::Config.env == :production
+    builder.use Pakyow::Middleware::NonWwwEnforcer if Pakyow::Config.env == :production
     builder.use Sass::Plugin::Rack if Pakyow::Config.env == :development
   end
 

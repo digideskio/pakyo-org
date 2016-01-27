@@ -94,6 +94,7 @@ GEM
       htmlentities (>= 4.0.0)
     puma (2.15.3)
     rack (1.6.4)
+    rack-ssl-enforcer (0.2.9)
     rake (10.4.2)
     redcarpet (3.3.3)
     redis (3.2.2)
@@ -123,5 +124,9 @@ DEPENDENCIES
   pakyow-markdown
   pakyow-slim
   puma
+  rack-ssl-enforcer
   sass
   thin
+
+BUNDLED WITH
+   1.11.2

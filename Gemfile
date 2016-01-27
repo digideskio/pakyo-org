@@ -16,6 +16,8 @@ gem 'pakyow-markdown'
 
 gem 'sass'
 
+gem 'rack-ssl-enforcer'
+
 group :development do
   gem 'capistrano', '~> 3.4'
   gem 'capistrano-rbenv'
