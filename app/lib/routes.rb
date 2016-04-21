@@ -28,6 +28,8 @@ Pakyow::App.routes do
     presenter.path = 'errors/500'
   end
 
+  default do; end
+
   get 'manual' do
     redirect '/docs', 301
   end
