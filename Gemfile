@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
-# live on the edge
-gem 'pakyow', github: 'pakyow/pakyow', require: false
+gem 'pakyow', '~> 0.11'
 gem 'pakyow-assets', github: 'pakyow/assets'
 
 gem 'puma', platforms: :ruby
