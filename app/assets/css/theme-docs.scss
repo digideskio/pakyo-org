@@ -36,12 +36,13 @@ header {
 
   nav {
     float: right;
-    line-height: 42px;
+    margin-top: 15px;
 
     a {
       margin-left: 20px;
       color: $color-white;
       text-transform: uppercase;
+      font-weight: $weight-semibold;
     }
   }
 }
@@ -148,8 +149,19 @@ main {
 
   p {
     @include rem(line-height, 25);
-    @include rem(font-size, 15);
+    @include rem(font-size, 16);
     margin-bottom: 20px;
+    color: $color-dgray;
+  }
+
+  li {
+    @include rem(line-height, 22);
+    @include rem(font-size, 14);
+    color: $color-dgray;
+  }
+
+  ul {
+    margin-bottom: 30px;
   }
 }
 

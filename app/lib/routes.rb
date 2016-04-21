@@ -4,7 +4,7 @@ Pakyow::App.routes do
   end
 
   handler 500 do
-    unless Pakyow.app.env == :development
+    unless Pakyow::Config.env == :development
       subject = 'pakyow-web fail'
 
       body = []
@@ -172,7 +172,7 @@ Pakyow::App.routes do
     end
 
     default do
-      reroute('/docs/start')
+      reroute('/docs/overview')
     end
 
     # rewrites to handle doc renaming
@@ -328,10 +328,10 @@ Pakyow::App.routes do
             set_next_up(category, topic)
             set_contrib(category, topic)
           else
-            app.handle 404
+            handle 404
           end
         else
-          app.handle 404
+          handle 404
         end
       else
         presenter.path = 'docs'

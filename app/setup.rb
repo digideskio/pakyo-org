@@ -3,24 +3,17 @@ require 'pakyow'
 
 require_relative 'lib/middleware/non-www_enforcer'
 
-require 'sass/plugin/rack'
-Sass::Plugin.options[:template_location] = './resources/sass'
-Sass::Plugin.options[:css_location] = './public/css'
-
 Pakyow::App.define do
   configure :global do
     Bundler.require(:default, Pakyow::Config.env)
 
     realtime.enabled = false
+    session.enabled = false
   end
 
   configure :development do
     # TODO: set this to the same thing as production
     $docs_path = '/Users/bryanp/code/pakyow/docs'
-  end
-
-  configure :prototype do
-    app.ignore_routes = true
   end
 
   configure :production do
@@ -35,13 +28,18 @@ Pakyow::App.define do
   end
 
   middleware do |builder|
-    builder.use Rack::SslEnforcer if Pakyow::Config.env == :production
-    builder.use Pakyow::Middleware::NonWwwEnforcer if Pakyow::Config.env == :production
-    builder.use Sass::Plugin::Rack if Pakyow::Config.env == :development
+    if Pakyow::Config.env == :production
+      builder.use Rack::SslEnforcer
+      builder.use Pakyow::Middleware::NonWwwEnforcer
+    end
   end
 
-  after :load do
-    BlogPost.load
-    Category.load(YAML.load(File.read(File.join($docs_path, '_order.yaml'))))
+  # TODO: fix this once 164 is resolved
+  unless @after_load
+    after :load do
+      BlogPost.load
+      Category.load(YAML.load(File.read(File.join($docs_path, '_order.yaml'))))
+      @after_load = true
+    end
   end
 end

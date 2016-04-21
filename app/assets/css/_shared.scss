@@ -1,23 +1,25 @@
 @import "bourbon/bourbon";
 @import "pakyow-css/vars";
 
-$font-main: "Helvetica Neue", Helvetica, sans-serif;
+$font-main: "Whitney SSm A", "Whitney SSm B", sans-serif;
 $font-code: Consolas, Menlo, Courier, monospace;
+$font-head: $font-main;
 
 $color-white: #fff;
 $color-black: #202020;
-$color-red: #ff3800;
+$color-red: #fe4c4c;
 $color-gray: #777;
 $color-xgray: #f7f7f7;
 $color-lgray: #ddd;
 $color-mgray: #aaa;
 $color-dgray: #555;
 
-$weight-semibold: 500;
+$weight-medium: 500;
+$weight-semibold: 600;
 
 $margin: $container-margin;
 
-$h1-factor: 1.8;
+$h1-factor: 1.7;
 $h2-factor: 1.3;
 
 $em-base: 10;
@@ -29,6 +31,10 @@ $message-pfont-size: rem(10);
 
 $border:rem(1) solid #aaa;
 
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+
 @mixin mobile {
   @media (max-width: 500px) {
     @content;
@@ -36,6 +42,24 @@ $border:rem(1) solid #aaa;
 }
 
 @import "pakyow-css/base";
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-head;
+  font-weight: $weight-medium;
+}
+
+h5 {
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+}
+
+nav {
+  i {
+    margin-right: 5px;
+    font-size: 18px !important;
+    margin-top: -3px;
+  }
+}
 
 footer {
   margin-top: 100px;
@@ -81,15 +105,24 @@ hr {
   background: $color-lgray;
 }
 
-h1 strong {
-  text-transform: uppercase;
-  font-weight: 700;
+strong {
+  font-weight: $weight-semibold;
 }
 
 .marketing {
-  @include rem(font-size, 17);
+  @include rem(font-size, 16);
   @include rem(line-height, 28);
   color: $color-dgray;
+  font-family: $font-head;
+
+  a {
+    text-decoration: none;
+    font-weight: $weight-semibold;
+  }
+}
+
+.version-wrapper {
+  font-family: $font-head;
 }
 
 pre.highlight {
@@ -104,4 +137,14 @@ p code {
   background: $color-xgray;
   border-radius: 2px;
   padding: 5px 5px;
+}
+
+blockquote {
+  border-left: 3px solid $color-mgray;
+  padding-left: 20px;
+
+  p {
+    font-size: rem(14) !important;
+    color: lighten($color-dgray, 15%) !important;
+  }
 }

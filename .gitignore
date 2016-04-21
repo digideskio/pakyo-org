@@ -7,3 +7,4 @@ config/deploy.rb
 bin
 *.map
 docs
+.assets

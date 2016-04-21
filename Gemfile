@@ -1,9 +1,8 @@
 source 'http://rubygems.org'
 
 # live on the edge
-# gem 'pakyow', github: 'pakyow/pakyow'
-
-gem 'pakyow', '~> 0.10'
+gem 'pakyow', github: 'pakyow/pakyow', require: false
+gem 'pakyow-assets', github: 'pakyow/assets'
 
 gem 'puma', platforms: :ruby
 gem 'thin', platforms: :mswin
@@ -14,12 +13,4 @@ gem 'httparty'
 gem 'pakyow-slim'
 gem 'pakyow-markdown'
 
-gem 'sass'
-
 gem 'rack-ssl-enforcer'
-
-group :development do
-  gem 'capistrano', '~> 3.4'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-bundler'
-end
