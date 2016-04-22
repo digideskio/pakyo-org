@@ -34,6 +34,9 @@ v0.11 was made possible with contributions from the following people:
 
 Thanks so much for your code, writing, ideas, and design critique.
 
+Check out the [Release Walkthrough
+screencast](https://www.youtube.com/watch?v=mlrDqw7oMAw) for a demo of this release.
+
 Read on for a summary of what you'll find in v0.11.
 
 ## Binding Parts
