@@ -1,6 +1,6 @@
 ---
 title: "Pakyow v0.11 Release Announcement"
-time: 8:45am CST
+time: 7:45am CST
 ---
 
 Pakyow v0.11 is now available on RubyGems. This is planned to be the last major
