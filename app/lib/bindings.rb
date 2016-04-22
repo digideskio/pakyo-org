@@ -23,6 +23,30 @@ Pakyow::App.bindings do
     binding :body do
       bindable.html
     end
+
+    binding :'share-fb' do
+      part :href do
+        "https://www.facebook.com/sharer/sharer.php?u=#{File.join(config.app.uri, bindable.permalink)}"
+      end
+    end
+
+    binding :'share-t' do
+      part :href do
+        "https://twitter.com/home?status=#{bindable.title}+-+#{File.join(config.app.uri, bindable.permalink)}"
+      end
+    end
+
+    binding :'share-hn' do
+      part :href do
+        "https://news.ycombinator.com/submitlink?u=#{File.join(config.app.uri, bindable.permalink)}&t=#{bindable.title}"
+      end
+    end
+
+    binding :'share-r' do
+      part :href do
+        "http://www.reddit.com/submit?url=#{File.join(config.app.uri, bindable.permalink)}"
+      end
+    end
   end
 
   scope :contributor do

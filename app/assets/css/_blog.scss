@@ -61,6 +61,18 @@
       font-weight: 600;
     }
 
+    p {
+      color: $color-dgray;
+      font-size: rem(16);
+      line-height: rem(24);
+    }
+
+    li {
+      color: $color-dgray;
+      font-size: rem(14);
+      line-height: rem(22);
+    }
+
     .date {
       @include rem(font-size, 11);
       color: $color-dgray;
@@ -97,4 +109,34 @@
 }
 
 .blog-archive-post {
+}
+
+.pw-post-social {
+  border-top: 1px solid #ebeef0;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
