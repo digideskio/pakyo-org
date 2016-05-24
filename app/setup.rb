@@ -14,8 +14,7 @@ Pakyow::App.define do
   end
 
   configure :development do
-    # TODO: set this to the same thing as production
-    $docs_path = '/Users/bryanp/code/pakyow/docs'
+    $docs_path = ENV['DOCS_PATH']
   end
 
   configure :production do
