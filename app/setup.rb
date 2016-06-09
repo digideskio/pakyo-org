@@ -31,7 +31,7 @@ Pakyow::App.define do
     Encoding.default_external = Encoding::UTF_8
     Encoding.default_internal = Encoding::UTF_8
 
-    $docs_path = 'docs'
+    $docs_path = 'docs/pakyow'
   end
 
   middleware do |builder|

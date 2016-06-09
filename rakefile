@@ -33,7 +33,14 @@ end
 namespace :docs do
   desc "update to the latest doc files"
   task :update do
-    system 'rm -rf docs && git clone git://github.com/pakyow/docs.git'
+    path = "docs"
+    system "rm -rf #{path}"
+    system "git init #{path}"
+    system "cd #{path} && git remote add -f origin git://github.com/pakyow/pakyow.git"
+    system "cd #{path} && git config core.sparseCheckout true"
+    system "cd #{path} && echo 'docs' >> .git/info/sparse-checkout"
+    system "cd #{path} && git pull origin master"
+    system "mv #{File.join(path, 'docs')} #{File.join(path, 'pakyow')}"
   end
 
   desc 'generate sitemap content for docs'
