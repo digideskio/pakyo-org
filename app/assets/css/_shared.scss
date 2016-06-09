@@ -114,6 +114,7 @@ strong {
   @include rem(line-height, 28);
   color: $color-dgray;
   font-family: $font-head;
+  font-weight: 500;
 
   a {
     text-decoration: none;
