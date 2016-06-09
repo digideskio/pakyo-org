@@ -13,3 +13,5 @@ gem 'pakyow-slim'
 gem 'pakyow-markdown'
 
 gem 'rack-ssl-enforcer'
+
+gem 'dotenv'

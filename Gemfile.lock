@@ -19,6 +19,7 @@ GEM
     concurrent-ruby (1.0.1)
     css_parser (1.4.1)
       addressable
+    dotenv (2.1.0)
     htmlentities (4.3.4)
     httparty (0.13.7)
       json (~> 1.8)
@@ -118,6 +119,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.2)
+  dotenv
   httparty
   pakyow (~> 0.11)
   pakyow-assets!

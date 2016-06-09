@@ -7,6 +7,12 @@ Pakyow::App.define do
   configure :global do
     Bundler.require(:default, Pakyow::Config.env)
 
+    if defined?(Dotenv)
+      env_path = ".env.#{Pakyow::Config.env}"
+      Dotenv.load env_path if File.exist?(env_path)
+      Dotenv.load
+    end
+
     realtime.enabled = false
     session.enabled = false
 
