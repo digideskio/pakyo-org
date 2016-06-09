@@ -30,13 +30,13 @@ module Pakyow::Helpers
   end
 
   def set_contrib(category, topic = :_overview)
-    repo = 'https://github.com/pakyow/docs'
+    repo = 'https://github.com/pakyow/pakyow'
 
     unless topic == :_overview
       topic = topic.slug
     end
 
-    view.scope(:contribute).prop(:link).attrs.href = File.join(repo, 'tree/master', category.slug, topic.to_s + '.md')
+    view.scope(:contribute).prop(:link).attrs.href = File.join(repo, 'blob/master/docs', category.slug, topic.to_s + '.md')
   end
 
   def render_nav(view, categories)
