@@ -4,27 +4,7 @@ Pakyow::App.routes do
   end
 
   handler 500 do
-    unless Pakyow::Config.env == :development
-      subject = 'pakyow-web fail'
-
-      body = []
-      body << request.path
-      body << ""
-      body << request.error.message
-      body << ""
-      body.concat(request.error.backtrace)
-
-      mail = Mail.new do
-        from    'fail@pakyow.com'
-        to      ENV['FAIL_MAIL']
-        subject subject
-        body    body.join("\n")
-      end
-
-      mail.delivery_method :sendmail
-      mail.deliver
-    end
-
+    Bugsnag.notify(req.error)
     presenter.path = 'errors/500'
   end
 
@@ -109,10 +89,7 @@ Pakyow::App.routes do
 
     builder = Builder::XmlMarkup.new(:indent => 2)
 
-    rfc882 = "%a, %d %b %Y %H:%M:%S %Z"
-
     processor = Pakyow.app.presenter.processor_store[:md]
-
 
     xml = builder.rss(:version => 2.0, 'xmlns:atom' => 'http://www.w3.org/2005/Atom') do |rss|
       rss.channel do |channel|
@@ -121,8 +98,8 @@ Pakyow::App.routes do
         channel.link "http://pakyow.org/blog/"
         channel.language "en"
         channel.copyright "#{Time.now.year} Metabahn, LLC"
-        channel.pubDate posts.first.published_at.strftime(rfc882) unless posts.empty?
-        channel.lastBuildDate posts.first.published_at.strftime(rfc882) unless posts.empty?
+        channel.pubDate posts.first.published_at.httpdate unless posts.empty?
+        channel.lastBuildDate posts.first.published_at.httpdate unless posts.empty?
 
         posts.each do |post|
           channel.item do |item|
@@ -130,8 +107,7 @@ Pakyow::App.routes do
             item.description processor.call(post.body) #RDiscount.new(post.body).to_html
             item.link File.join("http://pakyow.org", post.permalink)
             item.guid File.join("http://pakyow.org", post.permalink), :isPermaLink => true
-            item.pubDate post.published_at.strftime(rfc882)
-            item.source "http://pakyow.org/blog/"
+            item.pubDate post.published_at.httpdate
           end
         end
       end

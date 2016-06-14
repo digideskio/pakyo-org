@@ -32,6 +32,18 @@ Pakyow::App.define do
     Encoding.default_internal = Encoding::UTF_8
 
     $docs_path = 'docs/pakyow'
+
+    realtime.redis[:url] = ENV['REDIS_URL']
+
+    Bugsnag.configure do |config|
+      config.api_key = ENV['BUGSNAG_API_KEY']
+      config.project_root = Pakyow::Config.app.root
+    end
+
+    assets.compile_on_startup = false
+    # assets.prefix = '//s.pakyow.org'
+
+    logger.stdout = true
   end
 
   middleware do |builder|
@@ -48,5 +60,12 @@ Pakyow::App.define do
       Category.load(YAML.load(File.read(File.join($docs_path, '_order.yaml'))))
       @after_load = true
     end
+  end
+end
+
+Pakyow::App.after :configure do
+  Pakyow::App.processor :html do |content|
+    content = Pakyow::Assets.mixin_fingerprints(content) if Pakyow::Config.env == :production
+    content
   end
 end
