@@ -2,6 +2,8 @@ require 'rake'
 require 'rake/testtask'
 require 'pakyow-rake'
 
+Dir.glob('tasks/*.rake').each { |r| import r }
+
 env = ARGV[1] || 'development'
 env = env.split('=')[1] || env
 
