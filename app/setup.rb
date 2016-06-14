@@ -1,8 +1,6 @@
 require 'bundler/setup'
 require 'pakyow'
 
-require_relative 'lib/middleware/non-www_enforcer'
-
 Pakyow::App.define do
   configure :global do
     Bundler.require(:default, Pakyow::Config.env)
@@ -44,13 +42,6 @@ Pakyow::App.define do
     # assets.prefix = '//s.pakyow.org'
 
     logger.stdout = true
-  end
-
-  middleware do |builder|
-    if Pakyow::Config.env == :production
-      builder.use Rack::SslEnforcer
-      builder.use Pakyow::Middleware::NonWwwEnforcer
-    end
   end
 
   # TODO: fix this once 164 is resolved
