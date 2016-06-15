@@ -13,13 +13,13 @@ We also took the opportunity to dust off the website and update the messaging.
 Included in this effort are the following new guides covering some of the
 conceptual details of the framework:
 
-- [Why Pakyow?](https://pakyow.org/docs/overview)
-- [Progressive Enhancement](https://pakyow.org/docs/overview/progressive-enhancement)
-- [Auto-Updating Views](https://pakyow.org/docs/overview/views)
-- [Rapid Prototypes](https://pakyow.org/docs/overview/prototypes)
-- [Ring.js Components](https://pakyow.org/docs/overview/ring)
-- [Prioritized User Trust](https://pakyow.org/docs/overview/trust)
-- [Democratic Web](https://pakyow.org/docs/overview/democratic)
+- [Why Pakyow?](https://www.pakyow.org/docs/overview)
+- [Progressive Enhancement](https://www.pakyow.org/docs/overview/progressive-enhancement)
+- [Auto-Updating Views](https://www.pakyow.org/docs/overview/views)
+- [Rapid Prototypes](https://www.pakyow.org/docs/overview/prototypes)
+- [Ring.js Components](https://www.pakyow.org/docs/overview/ring)
+- [Prioritized User Trust](https://www.pakyow.org/docs/overview/trust)
+- [Democratic Web](https://www.pakyow.org/docs/overview/democratic)
 
 v0.11 was made possible with contributions from the following people:
 
@@ -50,7 +50,7 @@ Pakyow::App.bindings do
   scope :post do
     prop :link do
       part :href do
-        'http://pakyow.org'
+        'https://www.pakyow.org'
       end
 
       part :content do
@@ -67,7 +67,7 @@ Prior to binding parts, this would look like:
 Pakyow::App.bindings do
   scope :post do
     prop :link do
-      { href: 'http://pakyow.org', content: 'Pakyow' }
+      { href: 'https://www.pakyow.org', content: 'Pakyow' }
     end
   end
 end

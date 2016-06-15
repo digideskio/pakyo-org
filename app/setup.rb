@@ -14,7 +14,7 @@ Pakyow::App.define do
     realtime.enabled = false
     session.enabled = false
 
-    app.uri = 'https://pakyow.org'
+    app.uri = 'https://www.pakyow.org'
   end
 
   configure :development do

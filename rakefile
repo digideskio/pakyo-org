@@ -47,7 +47,7 @@ namespace :docs do
 
   desc 'generate sitemap content for docs'
   task :sitemap => [:'pakyow:stage'] do
-    docs = 'http://pakyow.org/docs'
+    docs = 'https://www.pakyow.org/docs'
     now = Time.now
 
     Category.all.each do |category|

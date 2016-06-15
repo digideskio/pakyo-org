@@ -5,406 +5,406 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://pakyow.org/</loc>
+  <loc>https://www.pakyow.org/</loc>
   <changefreq>weekly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/get-involved</loc>
+  <loc>https://www.pakyow.org/get-involved</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog</loc>
+  <loc>https://www.pakyow.org/blog</loc>
   <changefreq>weekly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs</loc>
+  <loc>https://www.pakyow.org/docs</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <!-- docs -->
 <url>
-  <loc>http://pakyow.org/docs/start</loc>
+  <loc>https://www.pakyow.org/docs/start</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/start/installing</loc>
+  <loc>https://www.pakyow.org/docs/start/installing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/start/creating</loc>
+  <loc>https://www.pakyow.org/docs/start/creating</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/start/running</loc>
+  <loc>https://www.pakyow.org/docs/start/running</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/start/contributing</loc>
+  <loc>https://www.pakyow.org/docs/start/contributing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/start/license</loc>
+  <loc>https://www.pakyow.org/docs/start/license</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/concepts</loc>
+  <loc>https://www.pakyow.org/docs/concepts</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/concepts/view-first-development</loc>
+  <loc>https://www.pakyow.org/docs/concepts/view-first-development</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/concepts/simple-state-propagation</loc>
+  <loc>https://www.pakyow.org/docs/concepts/simple-state-propagation</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/concepts/view-transformation-protocol</loc>
+  <loc>https://www.pakyow.org/docs/concepts/view-transformation-protocol</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/presentation</loc>
+  <loc>https://www.pakyow.org/docs/presentation</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/presentation/processors</loc>
+  <loc>https://www.pakyow.org/docs/presentation/processors</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing</loc>
+  <loc>https://www.pakyow.org/docs/routing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/named-functions</loc>
+  <loc>https://www.pakyow.org/docs/routing/named-functions</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/hooks</loc>
+  <loc>https://www.pakyow.org/docs/routing/hooks</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/groups</loc>
+  <loc>https://www.pakyow.org/docs/routing/groups</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/namespaces</loc>
+  <loc>https://www.pakyow.org/docs/routing/namespaces</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/templates</loc>
+  <loc>https://www.pakyow.org/docs/routing/templates</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/nested-routes</loc>
+  <loc>https://www.pakyow.org/docs/routing/nested-routes</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/restful</loc>
+  <loc>https://www.pakyow.org/docs/routing/restful</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/uri-generation</loc>
+  <loc>https://www.pakyow.org/docs/routing/uri-generation</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/error-handling</loc>
+  <loc>https://www.pakyow.org/docs/routing/error-handling</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/route-sets</loc>
+  <loc>https://www.pakyow.org/docs/routing/route-sets</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/routing/mixins</loc>
+  <loc>https://www.pakyow.org/docs/routing/mixins</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic</loc>
+  <loc>https://www.pakyow.org/docs/view-logic</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic/api</loc>
+  <loc>https://www.pakyow.org/docs/view-logic/api</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic/data-sets</loc>
+  <loc>https://www.pakyow.org/docs/view-logic/data-sets</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic/nested</loc>
+  <loc>https://www.pakyow.org/docs/view-logic/nested</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic/bindings</loc>
+  <loc>https://www.pakyow.org/docs/view-logic/bindings</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/view-logic/stores</loc>
+  <loc>https://www.pakyow.org/docs/view-logic/stores</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/realtime</loc>
+  <loc>https://www.pakyow.org/docs/realtime</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/realtime/handlers</loc>
+  <loc>https://www.pakyow.org/docs/realtime/handlers</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/realtime/routing</loc>
+  <loc>https://www.pakyow.org/docs/realtime/routing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/realtime/production</loc>
+  <loc>https://www.pakyow.org/docs/realtime/production</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/live-views</loc>
+  <loc>https://www.pakyow.org/docs/live-views</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/mailer</loc>
+  <loc>https://www.pakyow.org/docs/mailer</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing</loc>
+  <loc>https://www.pakyow.org/docs/testing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing/routing</loc>
+  <loc>https://www.pakyow.org/docs/testing/routing</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing/logging</loc>
+  <loc>https://www.pakyow.org/docs/testing/logging</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing/presentation</loc>
+  <loc>https://www.pakyow.org/docs/testing/presentation</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing/realtime</loc>
+  <loc>https://www.pakyow.org/docs/testing/realtime</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/testing/ui</loc>
+  <loc>https://www.pakyow.org/docs/testing/ui</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/config</loc>
+  <loc>https://www.pakyow.org/docs/config</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers</loc>
+  <loc>https://www.pakyow.org/docs/helpers</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/params</loc>
+  <loc>https://www.pakyow.org/docs/helpers/params</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/sessions-cookies</loc>
+  <loc>https://www.pakyow.org/docs/helpers/sessions-cookies</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/redirecting</loc>
+  <loc>https://www.pakyow.org/docs/helpers/redirecting</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/halting</loc>
+  <loc>https://www.pakyow.org/docs/helpers/halting</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/sending-data</loc>
+  <loc>https://www.pakyow.org/docs/helpers/sending-data</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/request-response</loc>
+  <loc>https://www.pakyow.org/docs/helpers/request-response</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/helpers/logging</loc>
+  <loc>https://www.pakyow.org/docs/helpers/logging</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/tools</loc>
+  <loc>https://www.pakyow.org/docs/tools</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup</loc>
+  <loc>https://www.pakyow.org/docs/warmup</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/start</loc>
+  <loc>https://www.pakyow.org/docs/warmup/start</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/view</loc>
+  <loc>https://www.pakyow.org/docs/warmup/view</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/data</loc>
+  <loc>https://www.pakyow.org/docs/warmup/data</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/counters</loc>
+  <loc>https://www.pakyow.org/docs/warmup/counters</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/comments</loc>
+  <loc>https://www.pakyow.org/docs/warmup/comments</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/deployment</loc>
+  <loc>https://www.pakyow.org/docs/warmup/deployment</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/warmup/conclusion</loc>
+  <loc>https://www.pakyow.org/docs/warmup/conclusion</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-11-15T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/data</loc>
+  <loc>https://www.pakyow.org/docs/data</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/forms</loc>
+  <loc>https://www.pakyow.org/docs/forms</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/failure</loc>
+  <loc>https://www.pakyow.org/docs/failure</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/docs/failure/email</loc>
+  <loc>https://www.pakyow.org/docs/failure/email</loc>
   <changefreq>monthly</changefreq>
   <lastmod>2015-10-28T00:00:00Z</lastmod>
 </url>
 <!-- blog -->
 <url>
-  <loc>http://pakyow.org/blog/archive</loc>
+  <loc>https://www.pakyow.org/blog/archive</loc>
   <changefreq>weekly</changefreq>
   <lastmod>2015-11-16T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2015/11/16/zero-ten</loc>
+  <loc>https://www.pakyow.org/blog/2015/11/16/zero-ten</loc>
   <lastmod>2015-11-16:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2015/04/11/pakyow-postgres-sequel</loc>
+  <loc>https://www.pakyow.org/blog/2015/04/11/pakyow-postgres-sequel</loc>
   <lastmod>2015-04-11T22:35:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2015/03/24/ui-intro</loc>
+  <loc>https://www.pakyow.org/blog/2015/03/24/ui-intro</loc>
   <lastmod>2015-03-24T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2015/01/07/recursive-data-binding</loc>
+  <loc>https://www.pakyow.org/blog/2015/01/07/recursive-data-binding</loc>
   <lastmod>2015-01-07T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2015/01/05/zero-nine-release-party</loc>
+  <loc>https://www.pakyow.org/blog/2015/01/05/zero-nine-release-party</loc>
   <lastmod>2015-01-05T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2014/12/06/zero-nine-one</loc>
+  <loc>https://www.pakyow.org/blog/2014/12/06/zero-nine-one</loc>
   <lastmod>2014-12-06T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2014/11/17/pakyow-fail</loc>
+  <loc>https://www.pakyow.org/blog/2014/11/17/pakyow-fail</loc>
   <lastmod>2014-11-17T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2014/11/09/zero_nine</loc>
+  <loc>https://www.pakyow.org/blog/2014/11/09/zero_nine</loc>
   <lastmod>2014-11-09T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2014/03/04/zero_eight</loc>
+  <loc>https://www.pakyow.org/blog/2014/03/04/zero_eight</loc>
   <lastmod>2014-03-04T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2013/02/14/zero_eight_rc1_release</loc>
+  <loc>https://www.pakyow.org/blog/2013/02/14/zero_eight_rc1_release</loc>
   <lastmod>2013-02-14T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2012/02/29/zero_seven_two</loc>
+  <loc>https://www.pakyow.org/blog/2012/02/29/zero_seven_two</loc>
   <lastmod>2012-02-29T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2012/02/16/announcing_zero_eight</loc>
+  <loc>https://www.pakyow.org/blog/2012/02/16/announcing_zero_eight</loc>
   <lastmod>2012-02-16T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2012/01/08/zero_seven_one</loc>
+  <loc>https://www.pakyow.org/blog/2012/01/08/zero_seven_one</loc>
   <lastmod>2012-01-08T00:00:00Z</lastmod>
 </url>
 <url>
-  <loc>http://pakyow.org/blog/2011/11/21/zero_seven</loc>
+  <loc>https://www.pakyow.org/blog/2011/11/21/zero_seven</loc>
   <lastmod>2011-11-21T00:00:00Z</lastmod>
 </url>
 </urlset>

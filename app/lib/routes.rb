@@ -95,7 +95,7 @@ Pakyow::App.routes do
       rss.channel do |channel|
         channel.title "Pakyow Development Blog"
         channel.description "The development blog for Pakyow, an open-source framework for building web apps in Ruby."
-        channel.link "http://pakyow.org/blog/"
+        channel.link "https://www.pakyow.org/blog/"
         channel.language "en"
         channel.copyright "#{Time.now.year} Metabahn, LLC"
         channel.pubDate posts.first.published_at.httpdate unless posts.empty?
@@ -105,8 +105,8 @@ Pakyow::App.routes do
           channel.item do |item|
             item.title post.title
             item.description processor.call(post.body) #RDiscount.new(post.body).to_html
-            item.link File.join("http://pakyow.org", post.permalink)
-            item.guid File.join("http://pakyow.org", post.permalink), :isPermaLink => true
+            item.link File.join("https://www.pakyow.org", post.permalink)
+            item.guid File.join("https://www.pakyow.org", post.permalink), :isPermaLink => true
             item.pubDate post.published_at.httpdate
           end
         end
