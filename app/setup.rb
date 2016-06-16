@@ -39,7 +39,7 @@ Pakyow::App.define do
     end
 
     assets.compile_on_startup = false
-    # assets.prefix = '//s.pakyow.org'
+    assets.prefix = '//s.pakyow.org'
 
     logger.stdout = true
   end
