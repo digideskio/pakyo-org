@@ -273,7 +273,7 @@ Pakyow::App.routes do
           set_next_up(category)
           set_contrib(category)
         else
-          app.handle 404
+          handle 404
         end
       else
         presenter.path = 'docs'
