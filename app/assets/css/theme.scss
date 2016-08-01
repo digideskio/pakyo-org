@@ -2,16 +2,30 @@
 
 .wrapper {
   margin: 60px auto;
+
+  @include mobile {
+    margin-top: 20px;
+  }
 }
 
 header {
   min-width: $container-width;
   font-family: $font-head;
   @include clearfix;
+
+  @include mobile  {
+    height: 110px;
+    min-width: 50px;
+    border-bottom: 1px solid $color-gray;
+  }
 }
 
 main {
   margin-top: 175px;
+
+  @include mobile {
+    margin-top: 15px;
+  }
 }
 
 nav {
@@ -30,6 +44,12 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: $weight-semibold;
+
+    @include mobile {
+      margin: 10px 15px;
+      float: none;
+      text-align: center;
+    }
 
     &:hover {
       color: $color-gray;
@@ -68,6 +88,12 @@ nav {
     position: absolute;
     right: 50%;
     margin-right: 70px;
+
+    @include mobile {
+      top: 30px;
+      margin-right: 50px;
+      margin-left: 20px;
+    }
   }
 
   .nav-right {
@@ -75,6 +101,11 @@ nav {
     position: absolute;
     left: 50%;
     margin-left: 70px;
+
+    @include mobile {
+      top: 30px;
+      margin-right: 20px;
+    }
   }
 }
 
@@ -118,6 +149,13 @@ nav {
   }
 }
 
+
+.concept-wrapper {
+  padding-top: 50px;
+  @include mobile {
+    padding: 0;
+  }
+}
 .concept-text {
   color: $color-dgray;
   font-size: 16px;
@@ -128,11 +166,21 @@ nav {
   &.float-l {
     margin-left: -30px;
     margin-right: 30px;
+    @include mobile {
+      float: none;
+      width: 100%;
+      margin: auto;
+    }
   }
 
   &.float-r {
     margin-right: -30px;
     margin-left: 30px;
+    @include mobile {
+      float: none;
+      width: 100%;
+      margin: auto;
+    }
   }
 
   &.concept-simplicity {
@@ -142,6 +190,10 @@ nav {
 
 .concept-header {
   white-space: nowrap;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .concept-link {
@@ -235,6 +287,10 @@ nav {
     @include rem(font-size, 13);
     padding: 5px 8px;
     width: 400px;
+
+    @include mobile {
+      width: 65%;
+    }
   }
 
   #mc-embedded-subscribe {
@@ -252,10 +308,20 @@ nav {
   margin: auto;
   text-align: center;
 
+  @include mobile {
+    width: auto;
+    margin: auto;
+  }
+
   .col {
     width: 200px;
     margin: 0;
     padding: 0;
+
+    @include mobile {
+      width: auto;
+      float: none;
+    }
   }
 }
 

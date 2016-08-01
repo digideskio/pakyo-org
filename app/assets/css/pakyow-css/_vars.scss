@@ -5,7 +5,7 @@ $container-margin: 20px;
 
 $relational-margin: 50px;
 
-$base-font-size: 13;
+$base-font-size: 15;
 
 $h1-factor: 2.5;
 $h2-factor: 1.9;
@@ -45,3 +45,23 @@ $header-margin-top-factor: 1.5;
 
 $font-main: "Helvetica Neue", Helvetica, sans-serif;
 $font-code: "Source Code Pro", Menlo, monospace;
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 900px)
+  and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
